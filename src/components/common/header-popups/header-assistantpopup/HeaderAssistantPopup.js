@@ -12,10 +12,6 @@ import { TypeAnimation } from 'react-type-animation';
 import { InputAdornment } from '@mui/material';
 import Input from '@mui/material/Input';
 import Button from '@mui/material/Button';
-import Tooltip from "@mui/material/Tooltip";
-import Fade from '@mui/material/Fade';
-import ClickAwayListener from '@mui/material/ClickAwayListener';
-import Zoom from '@mui/material/Zoom';
 import "swiper/css";
 import firstStep from '../../../../assets/images/header/ai-assistant/first.mov';
 import secondStep from '../../../../assets/images/header/ai-assistant/second.mov';
@@ -24,7 +20,6 @@ import questionIcon from '../../../../assets/images/header/ai-assistant/question
 
 import axios from 'axios';
 
-const NLPCloudClient = require('nlpcloud');
 
 
 
@@ -32,9 +27,6 @@ const NLPCloudClient = require('nlpcloud');
 const HeaderAssistantPopup = ({}) => {
 
   const dispatch = useDispatch();
-  // const assistantPopup = useSelector((state) => state.popup.assistantPopupToggler);
-  // const newAssistantPopup = useSelector((state) => state.popup.newAssistantPopupToggler);
-  // const [assistantMessage, setAssistantMessage] = useState(useSelector((state) => state.popup.assistantMessage));
   const { t } = useTranslation();
 
 
@@ -105,30 +97,13 @@ const HeaderAssistantPopup = ({}) => {
   ]
 
 
-  const [contents, setContents] = useState(initialContents);
-
-  
-
-  
 
 
-
-  const [addShakeClass, setAddShakeClass] = useState(false)
-
-
-
-  const [openTooltip, setOpenTooltip] = useState(false);
-
-
-
-  // const apiUrl = "https://api.nlpcloud.io/v1/gpu/finetuned-llama-2-70b/chatbot";
   const token = "";
 
 
 
   const [history, setHistory] = useState([
-    // { input: "Hello friend", response: "Hi there, how is it going today?" },
-    // { input: "Well, not that good...", response: "Oh? What happened?" }
   ])
 
 
@@ -146,21 +121,7 @@ const HeaderAssistantPopup = ({}) => {
       }
     };
 
-    axios.post('https://api.nlpcloud.io/v1/gpu/finetuned-llama-2-70b/chatbot', requestData, config)
-      .then(response => {
-        setAiAnswerText(response.data.response);
-        // console.log('data',response.data)
-        // console.log('responsee',response.data.response)
-        
-
-        history.push({
-          input: userQuestionText,
-          response: response.data.response
-        })
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
+    
   };
 
   
@@ -208,24 +169,6 @@ const HeaderAssistantPopup = ({}) => {
             <div className='assistant-popup-list__header-actions'>
               {/* <ClickAwayListener onClickAway={() => setOpenTooltip(false)}> */}
                 <div className='assistant-popup-list__header-actions_btn'>
-                  {/* <Tooltip 
-                    title='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Arcu dictum varius duis at consectetur lorem donec massa.'
-                    id="header-aipopup__tooltip"
-                    placement="bottom"
-                    TransitionComponent={Fade}
-                    TransitionProps={{ timeout: 400 }}
-                    onClose={() => setOpenTooltip(false)}
-                    open={openTooltip}
-                    disableFocusListener
-                    disableHoverListener
-                    disableTouchListener
-                  >
-                    <IconButton onClick={() => {
-                      setOpenTooltip((open) => !open)
-                    }}>
-                      <img src={questionIcon} alt='question button' />
-                    </IconButton>
-                  </Tooltip> */}
 
                   <IconButton onClick={() => {
                     setHelpIsShowing(true)
@@ -336,16 +279,6 @@ const HeaderAssistantPopup = ({}) => {
                           )
                         ))}
 
-
-                          {/* {contents.map((chat, index) => (
-                            index > 7 && index !== contents.length - 1 &&
-                              <div className='assistant-popup-list__body-content__info_history-item' key={index}>
-                                <div className='assistant-popup-list__body-content__info_history-item-user'>
-                                  <p className='assistant-popup-list__body-content__info_history-item-user-title'>{chat.role === 'user' ? 'You' : 'AI'}: <span className='assistant-popup-list__body-content__info_history-item-user-text'>{chat.parts.text}</span></p>
-                                </div>
-                              </div> 
-
-                          ))} */}
                       </div>
 
                       {/* start verifying - first step part one */}
