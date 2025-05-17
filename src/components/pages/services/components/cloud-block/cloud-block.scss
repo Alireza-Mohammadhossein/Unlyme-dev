@@ -1,0 +1,202 @@
+// @import '../../../styles/sass/variables.scss';
+
+.cloud-block {
+    box-shadow: 0px 4px 20px 0px #00000026;
+    border-radius: $border-radius-big;
+    overflow: hidden; 
+    
+    &__header {
+      // border-bottom: 1px solid $delimiter;
+      background-color: $cloud-header-background;
+      padding: 14px 25px;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      justify-content: flex-start;
+
+      &.back-transparent {
+        opacity: 0.3;
+      }
+
+      &_title-container {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      &-title {
+        font-size: 22px;
+        color: $cloud-title-color;
+      }
+      &-subtitle {
+        font-size: 13px;
+        color: $cloud-subtitle-color;
+      }
+      &_collapse {
+        &_btn{
+          color: $blue;
+          background-color: transparent;
+          padding: 0;
+          margin-left: 10px;
+        }
+      }
+      &_info {
+        border: 1px solid $light-gray;
+        border-radius: 100%;
+        color: $light-gray;
+        margin-left: $space;
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        line-height: 16px;
+        font-size: 10px;
+        transition: 0.2s;
+        cursor: pointer;
+        font-weight: bold;
+        &:hover {
+          border-color: $gray;
+          color: $gray;
+        }
+      }
+      &_btn {
+        margin-left: auto;
+        display: flex;
+        padding: 0;
+        height: auto;
+      }
+      &_icon-container {
+        width: 40px;
+        height: 40px;
+        margin-right: $space;
+        &--blue {
+          background-color: $blue;
+        }
+        &--red {
+          background-color: $red;
+        }
+        &--purple {
+          background-color: $purple;
+        }
+        &--orange {
+          background-color: $orange;
+        }
+        &--green {
+          background-color: $green;
+        }
+        &--silver {
+          background-color: $silver;
+        }
+        b {
+          color: white;
+        }
+        i {
+          font-size: 16px;
+          padding: 4px 3px;
+        }
+      }
+      &-icon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__temp-gap {
+      height: 130px;
+    }
+    &__content {
+      padding: $space;
+      height: 282px;
+      background-color: #fff;
+      opacity: 1;
+      visibility: visible;
+
+      
+      &.back-transparent {
+        opacity: 0.3;
+      }
+
+      &.isCollapsed {
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        padding: 0;
+      }
+    }
+}
+
+.dark .cloud-block {
+  &__header {
+    background-color: $dark-theme-darker-background-color;
+
+    &-title {
+      color: $dark-theme-title-color;
+    }
+    
+    &-subtitle {
+      color: $dark-theme-subtitle-color;
+    }
+  }
+
+  &__content {
+    background-color: $dark-theme-background-color;
+  }
+}
+
+
+.layoutLG {
+  .cloud-block {
+    &__header {
+      height: 40px;
+
+      &-title {
+        font-size: 19px;
+      }
+    }
+
+    &__content {
+      height: 227px;
+    }
+  }
+}
+
+.layoutMD {
+  .cloud-block {
+    &__header {
+      &-title {
+        font-size: 18px;
+      }
+
+      &-subtitle {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.layoutSM {
+  .cloud-block {
+    &__header {
+      &-title {
+        font-size: 18px;
+      }
+
+      &-subtitle {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.layoutXS {
+  .cloud-block {
+    &__header {
+      &-title {
+        font-size: 16px;
+      }
+
+      &-subtitle {
+        font-size: 11px;
+      }
+    }
+  }
+}

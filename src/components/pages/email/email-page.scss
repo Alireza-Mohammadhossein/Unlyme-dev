@@ -1,0 +1,1258 @@
+@import '../../../styles/sass/variables.scss';
+
+.email-page {
+    width: 100%;
+    // padding-bottom: 10px;
+    // height: 75vh;
+    height: 100%;
+    box-sizing: border-box;
+
+    .grid-content_right{
+        overflow: auto;
+    }
+
+    & .MuiGrid-container {
+        margin: 0;
+    } 
+    
+      & .MuiGrid-item {
+        padding-top: 0 !important;
+      }
+    
+      & .MuiGrid-root {
+        height: 100%;
+        width: 100%;
+      }
+
+    &_sidebar {
+        padding: 0 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+        justify-content: space-between;
+
+        &_actions {
+            &_create-event {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                &_btn.MuiButtonBase-root {
+                  font-size: 14px;
+                  font-weight: 500 !important;
+                  background-color: #4382C4;
+                  width: 100%;
+                  text-align: center;
+                  color: #fff;
+                  border-radius: 8px;
+                  text-transform: none;
+                  height: 40px;
+                  box-sizing: border-box;
+
+                  .MuiButton-startIcon {
+                    width: 16px;
+                    height: 16px;
+                  }
+                }
+          
+                &_btn.MuiButtonBase-root:hover {
+                  background-color: #4382C4;
+                }
+
+                &_refresh.MuiButtonBase-root {
+                    font-size: 14px;
+                    font-weight: 500 !important;
+                    background-color: #4382C4;
+                    min-width: 40px;
+                    width: 40px;
+                    text-align: center;
+                    color: #fff;
+                    border-radius: 8px;
+                    height: 40px;
+                    box-sizing: border-box;
+  
+                    .MuiButton-startIcon {
+                      width: 16px;
+                      height: 16px;
+                      margin: 0;
+                    }
+                  }
+            
+                  &_refresh.MuiButtonBase-root:hover {
+                    background-color: #4382C4;
+                  }
+
+                
+            }
+    
+            &-section {
+                margin-top: 25px;
+    
+                &_category {
+                    &-list {
+    
+                        & .MuiTabs-flexContainer {
+                            gap: 10px;
+                        }
+    
+                    }
+    
+                    &-item {
+                        &.MuiButtonBase-root {
+                            text-transform: none;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            padding: 0 15px;
+                            border-radius: 8px;
+                            max-width: unset;
+                            height: 30px;
+                            box-sizing: border-box;
+                            min-height: unset;
+                            color: #414141;
+                            
+                            &:hover {
+                                // background-color: rgba(67, 130, 196, 0.1);
+                                background-color: transparent;
+                            }
+                        }
+    
+                        &.Mui-selected {
+                            // background-color: #4382C41A;
+                            background-color: transparent;
+                            color: #414141 !important;
+
+    
+                            .email-page_sidebar_actions-section_category-item_content-title {
+                                // font-weight: 600;
+                                // color: #4382C4;
+                                font-weight: 400;
+                                color: #414141;
+                            }
+                            .MuiSvgIcon-root {
+                                color: #1976d2;
+                            }
+                        }
+                        
+                        &_content {
+                            display: flex;
+                            gap: 15px;
+                            align-items: center;
+    
+                            &-icon {
+                                width: 16px;
+                                height: 16px;
+                            }
+    
+                            &-title {
+                                font-size: 14px;
+                                // font-weight: 600;
+                            }
+                            
+                            svg {
+                                color: rgba(0, 0, 0, 0.54);
+                            }
+                        }
+    
+                        &_unreadnum {
+                            background-color: #4382C4;
+                            border-radius: 5px;
+                            padding: 4px 8px;
+                            color: white;
+
+                            p {
+                                font-size: 13px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+    
+                    & .MuiTabs-indicator {
+                        display: none;
+                    }
+    
+                    &-tree {
+                        margin-top: 2px !important;
+                        max-height: 300px;
+                        overflow: auto;
+                        
+                        & .MuiTreeItem-content {
+                            box-sizing: border-box;
+                            border-radius: 8px;
+                            padding-left: 12px;
+                            height: 40px;
+                            min-height: unset;
+
+                            &:hover {
+                                background-color: transparent !important;
+                            }
+
+                            &.Mui-selected {
+                                background-color: transparent !important;
+                            }
+    
+                            &.Mui-focused {
+                                background-color: transparent !important;
+                            }
+    
+                            .MuiTreeItem-iconContainer {
+                                .MuiSvgIcon-root {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            img {
+                                width: 8px;
+                                height: 10px;
+                            }
+                        } 
+    
+                        &_item {
+                            display: flex;
+                            padding: 8px 0;
+                            align-items: center;
+                            color: #414141;
+                            font-size: 13px;
+                            padding-left: 7px;
+            
+                            & .MuiListItemIcon-root {
+                                min-width: 30px;
+                            }
+
+                            .MuiTypography-root  {
+                                font-size: 13px;
+                            }
+
+                            & .MuiButtonBase-root {
+                                img {
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-filters {
+                display: flex;
+                gap: 8px;
+                margin-top: 25px;
+
+                .MuiButtonBase-root {
+                    width: 50%;
+                    height: 30px;
+                    border-radius: 8px;
+                    background-color: #EAE9E9;
+                    border: unset;
+
+                    &.Mui-selected {
+                        background-color: #F5F5FE;
+                    }
+                }
+            }
+        }
+
+        &_space {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+      
+            &-progressbar.MuiLinearProgress-root  {
+              height: 10px;
+              border-radius: 5px;
+              background-color: #4382C433;
+      
+              .MuiLinearProgress-bar {
+                background-color: #4382C4;
+                border-radius: 5px;
+              }
+            }
+      
+            &-text {
+              color: #4382C4;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 18px;
+              display: flex;
+              justify-content: space-between;
+
+              b {
+                font-weight: 500;
+              }
+            }
+        }
+    }
+
+    &_main {
+        height: 100%;
+        padding: 0 5px 0 15px;
+
+        &_email {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            border-radius: 8px;
+
+            &-tab {
+                height: 100%;
+                box-sizing: border-box;
+
+                .MuiTable-root {
+                    border-collapse: separate;
+                    // position: relative;
+                    // overflow: hidden;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-between;
+
+                } 
+
+                .MuiBox-root {
+                    height: 100%;
+                    box-sizing: border-box;
+                    padding: 0;
+                } 
+                .MuiTypography-root {
+                    height: 100%;
+                    box-sizing: border-box;
+                    // padding: 10px;
+                }
+
+                .MuiTablePagination-root {
+                    overflow: hidden;
+                    min-height: unset;
+                    height: 40px;
+
+                    .MuiToolbar-root {
+                        min-height: unset;
+                        height: 100%;
+                        padding-right: 15px;
+                    }
+                }
+                
+                .MuiPaper-root {
+                    height: 100%;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: unset;
+                    background-color: transparent;
+
+                    .MuiTableContainer-root {
+                        border-radius: 8px;
+                        overflow-x: hidden;
+                        position: relative;
+                    }
+                }
+
+                .MuiTableCell-root {
+                    img {
+                        vertical-align: middle;
+                        width: 10px;
+                        height: auto;
+                        padding-bottom: 2px;
+                    }
+
+                    .star-icon {
+                        width: 18px;
+                        height: 18px;
+                    }
+                } 
+
+                .MuiTableRow-root {
+                    background-color: #fff;
+
+                    td:first-child {
+                        padding-left: 15px;
+                    }
+                    
+                    td:last-child {
+                        padding-right: 20px;
+                        font-weight: unset !important;
+                        color: #888888;
+                    }
+
+                    td {
+                        position: relative;
+                        font-size: 13px;
+                        color: #333333;
+                        border-bottom: 1px solid #E8E7E4;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        font-weight: 400;
+
+                        & > div {
+                            height: 100%;
+                            box-sizing: border-box;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            &.row-info {
+                                display: flex;
+                                // justify-content: space-between;
+                            }
+                            
+                                
+
+                            .row-text {
+                                display: flex;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                gap: 7px;
+
+                                .email-subject {
+                                    font-size: 13px;
+                                    color: #333;
+                                }
+    
+                                .email-message {
+                                    font-weight: normal;
+                                    font-size: 13px;
+                                    color: #888;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+    
+                                .email-divider {
+                                    font-weight: normal;
+                                    font-size: 13px;
+                                    color: #888;
+                                }
+                            }
+
+                            .email-attached {
+                                display: flex;
+                                gap: 8px;
+                                height: 100%;
+
+                                &_file {
+                                    width: 115px;
+                                    height: 70px;
+                                    background-color: #E5E5E5;
+                                    border-radius: 5px;
+                                    margin: 6px 0;
+                                    box-sizing: border-box;
+    
+                                    &-img {
+                                        width: inherit;
+                                        height: inherit;
+                                    }
+    
+                                    &-name {
+                                        padding: 5px 8px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 6px;
+    
+                                        p {
+                                            color: #333;
+                                            font-size: 12px;
+                                            font-weight: 600;
+                                            text-wrap: wrap;
+                                            text-align: left;
+                                            overflow-wrap: break-word;
+                                            word-break: break-word;
+                                        }
+    
+                                        span {
+                                            display: inline-block;
+                                            border-radius: 3px;
+                                            background: #CC2B1D;
+                                            padding: 1px 4px;
+                                            width: fit-content;
+                                            color: #FFF;
+                                            font-size: 12px;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+    
+                                &_actions {
+                                    height: 100%;
+                                    box-sizing: border-box;
+                                    padding: 6px 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    // justify-content: space-between;
+                                    gap: 8px;
+    
+                                    &-number {
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 4px;
+                                        border: 1px solid #ADABA8;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        color: #666;
+                                        font-size: 13px;
+                                        font-weight: 400 !important;
+                                        box-sizing: border-box;
+                                    }
+    
+                                    &-download {
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 4px;
+                                        border: 1px solid #ADABA8;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        min-width: unset;
+                                        box-sizing: border-box;
+    
+                                        img {
+                                            width: 16px;
+                                            height: 16px;
+                                        }
+                                    }
+                                }
+    
+    
+                            }
+                        }
+
+                        .MuiSvgIcon-root.read-icon {
+                            color: #4141418f;
+                            stroke: #ffffff;
+                            stroke-width: 0.5px;
+                            position: relative;
+                            top: 7px;
+                            margin-right: 5px;
+                        }
+
+                        button.MuiButtonBase-root {
+                            padding: 0;
+                        }
+
+                        .email-logo {
+                            width: 28px;
+                            height: 28px;
+                            padding-bottom: 0;
+                            margin-left: 5px;
+                            border-radius: 15px;
+                            font-size: 12px;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-weight: 300 !important;
+                            text-transform: uppercase;
+                        }
+
+                        .date-attached {
+                            display: flex;
+                            justify-content: end;
+                            gap: 15px;
+                            font-weight: 400 !important;
+
+
+                        }
+
+                    }
+
+                    &.unread-mail {
+                        background-color: #ffffff;
+                        
+                        td {
+                            font-weight: 500;
+
+                            .MuiSvgIcon-root.read-icon {
+                                color: rgba(0, 0, 0, 0.79);
+                            }
+
+                            div {
+                                // font-weight: 500;
+
+                                .email-subject {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+
+                        // td:nth-child(2) {
+                        //     position: relative;
+
+                        //     &::before {
+                        //         content: '';
+                        //         width: 8px;
+                        //         height: 8px;
+                        //         border-radius: 50%;
+                        //         background-color: #4382C4;
+                        //         display: inline-block;
+                        //         position: absolute;
+                        //         left: 0;
+                        //         top: 22px;
+                        //     }
+                        // }
+                    }
+
+                    .mark-btn {
+                        padding: 0 !important;
+                        width: 12px;
+                        height: 100%;
+                        align-items: center;
+                        display: none;
+                        position: absolute;
+                        top: -2px;
+                        left: 0;
+                        
+                        img {
+                            width: 12px;
+                            padding-top: 1.5px;
+                        }
+                    }
+
+                    &:hover {
+                        .mark-btn {
+                            display: inline-block;
+                        }
+                    }
+
+                    .checkbox {
+                        img {
+                            width: 14px;
+                            height: 14px;
+                        }
+                    }
+
+                    
+                }
+
+                .MuiTableCell-paddingCheckbox {
+                    
+                    .MuiButtonBase-root {
+
+                        .MuiSvgIcon-root {
+                            stroke: #fff;
+                            width: auto;
+                            height: 14px;
+                            color: #B6B6B6;
+                            border-radius: 3px;
+                        }
+
+                        &.MuiCheckbox-indeterminate {
+                            .MuiSvgIcon-root {
+                                color: #51A3FF;
+                            }
+                        }
+
+                        &.Mui-checked {
+                            .MuiSvgIcon-root {
+                                color: #51A3FF;
+                            }
+                        }
+                    }
+                    
+                }
+
+                .email-header {
+                    .MuiTableRow-root:nth-child(1), .MuiTableRow-root:nth-child(2) {
+                        background-color: #ffffff;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .email-header {
+        width: 100%;
+        height: 41px;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+        display: inline-table;
+
+
+        .MuiTableRow-root {
+
+            th {
+                // padding: 8px 0 3px 0;
+                padding: 0;
+                border-color: #D1CFCD;
+            }
+
+            th:first-child {
+                padding-left: 10px;
+            }
+
+        }
+
+        &_selected {
+            font-size: 13px;
+            text-align: left;
+            padding-bottom: 5px;
+
+            & .MuiTablePagination-root {
+                .MuiToolbar-root {
+                    padding-left: 0;
+                }
+            }
+
+            &_options {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                &-btn.MuiButtonBase-root {
+                    padding: 5px;
+                    text-transform: capitalize;
+                    color: #333;
+                    font-size: 13px;
+                    display: flex;
+                    gap: 6px;
+
+                    .MuiButton-startIcon {
+                        width: 16px;
+                        height: 16px;
+                        margin: 0;
+                    }
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+
+                    img {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
+
+        &_pagination {
+            padding: 0;
+            padding-bottom: 5px;
+
+            &-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+    
+                p {
+                    display: flex;
+                    gap: 5px;
+                    color: #727272;
+                    font-weight: 400;
+                }
+
+                button.MuiButtonBase-root {
+                    padding: 5px;
+                }
+            }
+        }
+
+    }
+
+    .table-body-container {
+        height: calc(100% - 95px);
+        overflow-y: auto;
+        width: 100%;
+
+        &.first {
+        }
+
+        &.second {
+            display: flex;
+        }
+
+        &.third {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+
+    .email-body {
+        overflow-y: auto;
+        width: 100%;
+
+        &.second {
+            width: 380px;
+            flex: 0 0 380px;
+        }
+
+        &.third {
+            width: 100%;
+        }
+    }
+
+    .single-email-container {
+
+        &.second {
+            width: calc(100% - 380px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #E8E7E4;
+
+            .single-mail {
+                display: inline-block;
+
+                &_right {
+                    display: none;
+                }
+            }
+        }
+
+        &.third {
+            width: 100%;
+            height: 200px;
+            flex: 0 0 200px;
+            border-top: 1px solid #E8E7E4;
+
+            .single-mail {
+                display: inline-block;
+                
+                &_right {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .empty-single-email {
+        &.first {
+            display: none;
+        }
+        &.second {
+            width: auto;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #E8E7E4;
+        }
+
+        &.third {
+            width: 100%;
+            height: 200px;
+            flex: 0 0 200px;
+            border-top: 1px solid #E8E7E4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #888888;
+        }
+    }
+
+    .email-filters {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+        min-height: unset;
+        height: 37px;
+
+        &_read {
+            &-toggler {
+                background-color: transparent;
+                gap: 10px;
+
+                .MuiButtonBase-root {
+                    font-family: 'Inter' !important;
+                    border: unset;
+                    padding: 4px 8px;
+                    color: #333;
+                    font-size: 13px;
+                    line-height: normal;
+                    letter-spacing: 0.13px;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+
+                    &.Mui-selected {
+                        border-radius: 4px;
+                        background: rgba(67, 130, 196, 0.10);
+                    }
+                }
+            }
+        }
+
+        &_sort {
+            font-family: 'Inter' !important;
+            padding-right: 10px;
+            font-weight: 400;
+            color: #333;
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+
+    .email-footer {
+        height: 54px;
+        display: inline-table;
+
+        .MuiTableCell-footer {
+            padding: 0 !important;
+        }
+
+        &__container {
+            height: 54px !important;
+            width: 100%;
+            padding: 0 45px 0 20px;
+            border-top: 1px solid #E8E7E4;
+            display: flex !important;
+            justify-content: space-between;
+        }
+
+        &__btn.MuiButtonBase-root {
+            border: 1px solid #B6B6B6;
+            border-radius: 8px;
+            padding: 5px 14px !important;
+            font-size: 13px;
+            color: #333;
+            text-transform: capitalize;
+            min-width: unset;
+            font-weight: 500 !important;
+
+            &:hover {
+                background-color: unset;
+            }
+        }
+
+        &__details {
+            display: flex;
+            gap: 14px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #333;
+        }
+    }
+}
+
+
+.cloud-page__header_email-details {
+    // height: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+    &_grid-content {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+
+        &_left {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            position: relative;
+
+            .cloud-page__header_email-details_left_search {
+                width: 310px;
+                box-sizing: border-box;
+                // transition: all 0.3s ease;
+            }
+
+            .cloud-page__header_email-details_left_actions {
+                width: 406px;
+            }
+        }
+
+        &_right {
+            width: max-content;
+        }
+    }
+
+    &_left {
+        &_search {
+
+            .MuiFormControl-root {
+                width: 100%;
+            }
+    
+            &_container {
+                position: relative;
+                color: #666666;
+                margin-left: 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                // background: rgba(240, 242, 245, 0.8);
+                background-color: #ffffff80;
+                border-radius: 8px;
+                transform: translateX(0);
+                transition: all 0.3s ease;
+                width: auto;
+                padding: 0 0 0 10px;
+                z-index: 10;
+        
+                label img {
+                  width: 18px;
+                }
+            }
+    
+            &-input {
+                width: 100%;
+                height: 36px;
+                font-size: 15px;
+                background-color: transparent;
+                padding: 0 8px;
+                line-height: 33px;
+                border: unset;
+                transition: all 0.3s ease;
+                color: #74737B;
+                transform: translateX(0);
+        
+                &::placeholder {
+                  color: #74737B;
+                  
+                }
+            }
+    
+            &-clear {
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+                width: 0;
+                position: absolute;
+                right: 10px;
+                cursor: pointer;
+                pointer-events: auto;
+                color: #51A3FF;
+                font-family: 'OpenSans' !important;
+                font-size: 12px;
+                font-weight: 600;
+            }
+
+            .searchemail-menu-popup {
+                width: calc(100% + 10px);
+                position: absolute;
+                top: 40px;
+                left: -10px;
+                display: flex;
+                flex-direction: column;
+                // gap: 5px;
+                border-radius: 8px;
+                background: #FFF;
+                box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+                padding: 10px 0;
+                list-style: none;
+                
+                &_item {
+                  color: #333;
+                  font-family: "OpenSans" !important;
+                  font-size: 13px;
+                  padding: 10px 15px;
+                  font-weight: 400;
+                  cursor: pointer;
+                  display: flex;
+                  align-items: center;
+                  gap: 15px;
+
+                  &:hover {
+                    background-color: rgba(0, 0, 0, 0.04);
+                  }
+
+                  img {
+                    width: 18px;
+                    height: 18px;
+                  }
+                  
+                  &.user {
+                    display: flex;
+                    gap: 10px;
+                    padding-left: 10px;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: #333;
+                        }
+
+                        span {
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: #888;
+                        }
+                    }
+                  }
+                }
+            }
+        }
+    
+        &_result {
+            width: 720px;
+            background-color: #fff;
+            border-radius: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            position: absolute;
+            top: 40px;
+            left: -10px;
+            z-index: 2;
+            padding: 20px 10px;
+    
+            &-list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 22px;
+            }
+    
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+    
+                &_logo {
+                    .MuiAvatar-root {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+    
+                &_info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 33px;
+    
+                    &-title {
+                        color: #333;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                    }
+    
+                    &-email {
+                        color: #888;
+                        font-size: 13px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    
+        &_actions {
+            // width: 100%;
+            display: flex;
+            background-image: linear-gradient(to right,#BBCFFC, #F3A8F5);
+            box-sizing: border-box;
+            height: 36px;   
+            gap: 10px;
+            align-items: center;
+            padding: 0 10px;
+            border-radius: 8px;
+            // margin-left: 10px;
+            // flex-grow: 1;
+            // flex-shrink: 1;
+    
+            &-btn.MuiButtonBase-root  {
+                height: 25px;
+                padding: 0 4px;
+                background-color: #ffffff;
+                color: #333333;
+                box-shadow: unset;
+                flex-grow: 1;
+                flex-shrink: 1;
+                line-height: 25px;
+                font-size: 13px;
+                font-weight: 400 !important;
+                text-transform: capitalize;
+                display: flex;
+                justify-content: space-between;
+    
+                .MuiButton-startIcon  {
+                    background-color: #E9F0F7;
+                    font-size: 13px;
+                    width: 17px;
+                    height: 17px;
+                    text-align: center;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+                }
+            }
+    
+            &-btn.MuiButtonBase-root:hover {
+                background-color: #ffffff;
+                color: #333333;
+                box-shadow: unset;
+    
+                .MuiButton-startIcon  {
+                    background-color: #E9F0F7;
+                }
+            }
+        }
+    }
+
+    &_right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        &_setting {
+
+        }
+
+        &_user {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 5px;
+
+            &-name {
+                color: #333;
+                font-size: 12px;
+            }
+
+            &-email {
+                color: #777;
+                font-size: 12px;
+            }
+        }
+
+        &_close {
+            text-align: right;
+            margin-left: 15px;
+
+            button.MuiIconButton-root {
+                img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}
+

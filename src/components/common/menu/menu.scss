@@ -1,0 +1,77 @@
+
+.menu {
+    box-sizing: border-box;
+    height: 100vh;
+    // margin-top: 109px;
+    margin-top: 90px;
+    padding-left: 1.5 * $space;
+    width: auto;
+    position: fixed;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      // background: rgba(255, 255, 255, 0.4);
+      background: #DFE9F880;
+      // box-shadow: inset 1px 0px 0px 0.5px #ffffff4d, 0px 4px 20px 0px #00000026;
+      box-shadow: inset 0px 0px 0px 1px #ffffff4d, 0px 4px 20px 0px #00000026;
+      backdrop-filter: blur(2px);
+      border-radius: 16px;
+      padding: 10px;
+
+      &.mt-10 {
+        margin-top: 10px;
+      }
+    }
+    &.menuXL {
+      .menu__item-img{
+        width: 50px;
+        height: 50px;
+      }
+    }
+    &.menuLG {
+      .menu__item-img{
+        width: 35px;
+        height: 35px;
+      }
+    }
+    &.menuMD {
+      .menu__item-img{
+        width: 35px;
+        height: 35px;
+      }
+    }
+    
+    &.menuSM {
+      .menu__item-img{
+        width: 35px;
+        height: 35px;
+      }
+    }
+    &.menuXS {
+      .menu__item-img{
+        width: 35px;
+        height: 35px;
+      }
+    }
+    &__item {
+      list-style: none;
+
+      .MuiButtonBase-root {
+        border-radius: 8px;
+        min-width: unset;
+        padding: 0;
+        min-height: unset;
+        height: auto;
+        line-height: unset;
+      }
+    }
+  }
+
+  .dark .menu {
+    &__list {
+      background-color: rgba(92, 92, 92, 0.6901960784);
+    }
+  }
+  

@@ -1,0 +1,32 @@
+<svg width="131" height="69" viewBox="0 0 131 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6081_6149)">
+<rect width="131" height="69" rx="12" fill="white"/>
+<path d="M0.5 12C0.5 5.64873 5.64873 0.5 12 0.5H18.5V68.5H12C5.64873 68.5 0.5 63.3513 0.5 57V12Z" fill="#F5F5F5"/>
+<path d="M0.5 12C0.5 5.64873 5.64873 0.5 12 0.5H18.5V68.5H12C5.64873 68.5 0.5 63.3513 0.5 57V12Z" stroke="#E8E7E4"/>
+<rect x="4" y="12" width="10" height="1.5" rx="0.75" fill="#E0E0E0"/>
+<rect x="4" y="17.5" width="10" height="1.5" rx="0.75" fill="#E0E0E0"/>
+<rect x="4" y="23" width="10" height="1.5" rx="0.75" fill="#E0E0E0"/>
+<rect x="4" y="28.5" width="10" height="1.5" rx="0.75" fill="#E0E0E0"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 0.5)" fill="#2D2D2D"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 0.5)" stroke="#E8E7E4" stroke-width="0.5"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 10.2142)" fill="#2D2D2D"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 10.2142)" stroke="#E8E7E4" stroke-width="0.5"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 19.9286)" fill="#2D2D2D"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 19.9286)" stroke="#E8E7E4" stroke-width="0.5"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 29.6428)" fill="#2D2D2D"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 29.6428)" stroke="#E8E7E4" stroke-width="0.5"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 39.3572)" fill="#2D2D2D"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 39.3572)" stroke="#E8E7E4" stroke-width="0.5"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 49.0714)" fill="#2D2D2D"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 49.0714)" stroke="#E8E7E4" stroke-width="0.5"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 58.7858)" fill="#2D2D2D"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 58.7858)" stroke="#E8E7E4" stroke-width="0.5"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 68.5)" fill="#2D2D2D"/>
+<rect x="0.25" y="-0.25" width="112.5" height="0.5" transform="matrix(1 0 0 -1 19 68.5)" stroke="#E8E7E4" stroke-width="0.5"/>
+</g>
+<defs>
+<clipPath id="clip0_6081_6149">
+<rect width="131" height="69" rx="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,1188 @@
+.products-filterpopup {
+    width: 320px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 20px;
+            color: #51A3FF;
+
+            p {
+                font-family: 'OpenSans' !important;
+            }
+        }
+        
+        &-btn {
+            .MuiButtonBase-root {
+                color: #51A3FF;
+            }
+        }
+    }
+
+    &-list {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-item {
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #444;
+            font-size: 13px;
+            line-height: 22px;
+            font-family: 'OpenSans' !important;
+        }
+
+         
+
+        & .MuiInputBase-root {
+            height: 35px;
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 8px;
+            background-color: #F8FAFC;
+            color: #444;
+            font-size: 14px;
+            font-family: 'OpenSans' !important;
+
+            input {
+                padding: 10px;
+                color: #444;
+                font-size: 14px;
+                font-family: 'OpenSans' !important;
+
+                &::placeholder {
+                    color: #444;
+                    font-size: 14px;
+                    opacity: 1;
+                }
+            }
+
+            .MuiOutlinedInput-notchedOutline {
+                border-radius: 8px;
+                border-color: #ECECEC;
+            }
+
+            &:hover .MuiOutlinedInput-notchedOutline {
+                border-color: #1976d2;
+            }
+        }
+
+        &-select {
+            width: 100%;
+
+            .MuiSelect-select {
+                padding: 10px;
+                // background-color: #F8FAFC;
+            }
+
+            .MuiOutlinedInput-notchedOutline  {
+                border-radius: 8px;
+            }
+
+            .MuiSvgIcon-root {
+                color: #ACACAC;
+            }
+
+            &.MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline {
+                border-color: #1976d2;
+            }
+        }
+
+
+        &-double {
+            display: flex;
+            gap: 10px;
+
+            .MuiInputBase-adornedStart {
+                padding-left: 10px;
+
+                .MuiTypography-body1 {
+                    font-family: 'OpenSans' !important;
+                    font-size: 14px;
+                    color: #ACACAC;
+                }
+
+                input {
+                    border-left: 1px solid #ececec;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    box-sizing: border-box;
+                    height: 100%;
+                }
+            }
+
+
+        }
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+
+        &-submit.MuiButtonBase-root {
+            text-transform: none;
+            color: #fff;
+            background-color: #51A3FF;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-top: 20px;
+            font-family: 'OpenSans' !important;
+            height: 40px;
+            box-sizing: border-box;
+
+            &:hover {
+                text-transform: none;
+                color: #fff;
+                background-color: #51A3FF;
+                padding: 10px 24px;
+                border-radius: 30px;
+            }
+        }
+
+        
+        &-reset.MuiButtonBase-root {
+            text-transform: none;
+            color: #888888;    
+            background-color: #fff;
+            padding: 10px 24px;
+            border-radius: 30px;
+            border: 1px solid #cdcdcd;
+            font-size: 14px;
+            margin-top: 20px;
+            font-family: 'OpenSans' !important;
+            height: 40px;
+            box-sizing: border-box;
+
+            &:hover {
+                text-transform: none;
+                color: #888888;    
+                background-color: #fff;
+                padding: 10px 24px;
+                border-radius: 30px;
+                border: 1px solid #cdcdcd;
+            }
+        }
+    }
+}
+
+.products-addnewpopup {
+    width: 80%;
+    max-width: 630px;
+    height: auto;
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-sizing: border-box;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #ECECEC;
+
+
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 20px;
+            color: #51A3FF;
+
+            p {
+                font-family: 'OpenSans' !important;
+            }
+        }
+        
+        &-btn {
+            .MuiButtonBase-root {
+                color: #51A3FF;
+            }
+        }
+    }
+
+    &-list {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        // gap: 20px;
+    }
+
+    &-item {
+        padding-bottom: 20px;
+
+        &.pb-0 {
+            padding-bottom: 0;
+        }
+
+        &.flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-title {
+            width: auto;
+            font-size: 14px;
+            color: #444;
+            font-family: 'OpenSans' !important;
+
+            &.required {
+                font-size: 13px;
+            }
+        }
+
+        .MuiFormControl-root {
+            width: 80%;
+            max-width: 380px;
+        }
+
+        &-number {
+            width: 80%;
+            max-width: 380px;
+            
+            .MuiFormControl-root {
+                width: 100%;
+            }
+
+            & .MuiInputBase-root {
+                height: 35px;
+                box-sizing: border-box;
+                width: 100%;
+                border-radius: 8px;
+                background-color: #F8FAFC;
+    
+                input {
+                    padding: 10px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    box-sizing: border-box;
+                    height: 100%;
+                    font-family: 'OpenSans' !important;
+                    color: #444;
+                    font-size: 14px;
+                }
+    
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 8px;
+                    border-color: #ECECEC;
+                }
+    
+                &:hover .MuiOutlinedInput-notchedOutline {
+                    border-color: #1976d2;
+                }
+            }
+
+            .MuiInputBase-adornedStart {
+                padding-left: 10px;
+
+                .MuiTypography-body1 {
+                    color: #ACACAC;
+                    font-size: 14px;
+                    font-family: 'OpenSans' !important;
+                }
+
+                input {
+                    border-left: 1px solid #ececec;
+                }
+            }
+        }
+
+        &-input {
+
+            & .MuiInputBase-root {
+                width: 100%;
+                border-radius: 8px;
+                background-color: #F8FAFC;
+    
+                input {
+                    padding: 10px;
+                }
+    
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 8px;
+                }
+    
+                &:hover .MuiOutlinedInput-notchedOutline {
+                    border-color: #1976d2;
+                }
+            }
+        }
+
+        &-select {
+            width: 100%;
+
+            .MuiSelect-select {
+                height: 35px;
+                box-sizing: border-box;
+                line-height: 1;
+                padding: 10px;
+                background-color: #F8FAFC;
+                font-size: 14px;
+                color: #444;
+                font-family: 'OpenSans' !important;
+                border-radius: 8px;
+            }
+
+            .MuiOutlinedInput-notchedOutline  {
+                border-radius: 8px;
+                border-color: #ECECEC;
+            }
+
+            .MuiSvgIcon-root {
+                color: #ACACAC;
+            }
+
+            &.MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline {
+                border-color: #1976d2;
+            }
+        }
+
+        &.switch {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                cursor: pointer;
+            }
+
+            .tooltip {
+                color: #51A3FF !important;
+            }
+        }
+
+        &.description {
+            display: flex;
+            align-items: top;
+            justify-content: space-between;
+
+            & .MuiInputBase-root {
+                border-radius: 8px;
+                background-color: #F8FAFC;
+                width: 100%;
+                min-height: 100px;
+                align-items: start;
+
+                textarea {
+                    font-family: 'OpenSans' !important;
+                    color: #444;
+                    font-size: 14px;
+                }
+    
+                input {
+                    padding: 10px;
+                }
+    
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 8px;
+                    border-color: #ECECEC;
+                }
+    
+                &:hover .MuiOutlinedInput-notchedOutline {
+                    border-color: #1976d2;
+                }
+            }
+        }
+
+        &.notes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & .MuiInputBase-root {
+                border-radius: 8px;
+                background-color: #F8FAFC;
+                width: 100%;
+                align-items: start;
+    
+                input {
+                    padding: 10px;
+                    height: 35px;
+                    box-sizing: border-box;
+                    color: #444;
+                    font-size: 14px;
+                    font-family: 'OpenSans' !important;
+                }
+    
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 8px;
+                    border-color: #ECECEC;
+                }
+    
+                &:hover .MuiOutlinedInput-notchedOutline {
+                    border-color: #1976d2;
+                }
+            }
+
+            .tooltip {
+                color: #51A3FF !important;
+            }
+        }
+
+        &.estimate {
+            display: flex;
+            align-items: top;
+            justify-content: space-between;
+
+            & .MuiFormControl-root{
+                max-width: unset;
+                width: 100%;
+
+                textarea {
+                    font-family: 'OpenSans' !important;
+                    font-size: 14px;
+                    color: #444;
+                }
+            }
+
+            & .MuiInputBase-root {
+                border-radius: 8px;
+                background-color: #F8FAFC;
+                width: 100%;
+                min-height: 100px;
+                align-items: start;
+    
+                input {
+                    padding: 10px;
+                }
+    
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 8px;
+                    border-color: #ECECEC;
+                }
+    
+                &:hover .MuiOutlinedInput-notchedOutline {
+                    border-color: #1976d2;
+                }
+            }
+        }
+
+        .MuiPaper-root {
+            width: 100%;
+            color: #93742A;
+            background-color: #FCF6EC;
+            border-color: #93742A;
+            border-radius: 8px;
+        }
+
+        .MuiToggleButtonGroup-root {
+            justify-content: end;
+            padding: 10px 0;
+
+            .MuiButtonBase-root {
+                background-color: transparent;
+                border: unset;
+                padding-top: 0;
+                padding-bottom: 0;
+                text-transform: none;
+                font-size: 14px;
+
+                &:last-child {
+                    border-left: 1px solid #51A3FF;
+                    padding-right: 0;
+                }
+
+                &.Mui-selected {
+                    color: #51A3FF;
+                }
+
+                &:hover {
+                    background-color: unset;
+                }
+            }
+        }
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+
+        &-submit.MuiButtonBase-root {
+            text-transform: none;
+            color: #fff;
+            background-color: #51A3FF;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-top: 20px;
+            font-family: 'OpenSans' !important;
+            height: 40px;
+            box-sizing: border-box;
+
+            &:hover {
+                text-transform: none;
+                color: #fff;
+                background-color: #51A3FF;
+                padding: 10px 24px;
+                border-radius: 30px;
+            }
+        }
+
+        
+        &-reset.MuiButtonBase-root {
+            text-transform: none;
+            color: #888888;    
+            background-color: #fff;
+            padding: 10px 24px;
+            border-radius: 30px;
+            border: 1px solid #cdcdcd;
+            font-size: 14px;
+            margin-top: 20px;
+            font-family: 'OpenSans' !important;
+            height: 40px;
+            box-sizing: border-box;
+
+            &:hover {
+                text-transform: none;
+                color: #888888;    
+                background-color: #fff;
+                padding: 10px 24px;
+                border-radius: 30px;
+                border: 1px solid #cdcdcd;
+            }
+        }
+    }
+}
+
+.products-deletepopup {
+    width: 80%;
+    max-width: 390px;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-sizing: border-box;
+
+    &-header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 0 10px 0;
+        gap: 10px;
+        // border-bottom: 1px solid #ECECEC;
+
+
+        &-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        &-subtitle {
+            text-align: center;
+            color: #888888;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        
+        &-btn {
+            .MuiButtonBase-root {
+                color: #51A3FF;
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        padding-top: 50px;
+
+        &-btn {
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+
+            &:first-child {
+                .MuiButtonBase-root:first-child {
+                    border: 1px solid #ECECEC;
+                    color: #888888;
+                    text-transform: none;
+                    font-size: 14px;
+                    padding: 10px 24px;
+                    border-radius: 50px;
+                    font-size: 14px;
+                    font-family: 'OpenSans' !important;
+                    height: 40px;
+                    box-sizing: border-box;
+                }
+            }
+
+            &:last-child {
+                .MuiButtonBase-root:first-child {
+                    border: 1px solid #FD5162;
+                    color: #FD5162;
+                    text-transform: none;
+                    font-size: 14px;
+                    padding: 10px 24px;
+                    border-radius: 50px;
+                    font-size: 14px;
+                    font-family: 'OpenSans' !important;
+                    height: 40px;
+                    box-sizing: border-box;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #FD5162;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.products-editproductpopup {
+    width: 80%;
+    max-width: 630px;
+    height: auto;
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-sizing: border-box;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #ECECEC;
+
+
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 20px;
+            color: #51A3FF;
+
+            p {
+                font-family: 'OpenSans' !important;
+            }
+        }
+        
+        &-btn {
+            .MuiButtonBase-root {
+                color: #51A3FF;
+            }
+        }
+    }
+
+    &-list {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        // gap: 20px;
+    }
+
+    &-item {
+        padding-bottom: 20px;
+
+        &.pb-0 {
+            padding-bottom: 0;
+        }
+
+        &.flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-title {
+            width: auto;
+            font-size: 14px;
+            color: #444;
+            font-family: 'OpenSans' !important;
+
+            &.required {
+                font-size: 13px;
+            }
+        }
+
+        .MuiFormControl-root {
+            width: 80%;
+            max-width: 380px;
+        }
+
+        &-number {
+            width: 80%;
+            max-width: 380px;
+            
+            .MuiFormControl-root {
+                width: 100%;
+            }
+
+            & .MuiInputBase-root {
+                height: 35px;
+                box-sizing: border-box;
+                width: 100%;
+                border-radius: 8px;
+                background-color: #F8FAFC;
+    
+                input {
+                    padding: 10px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    box-sizing: border-box;
+                    height: 100%;
+                    font-family: 'OpenSans' !important;
+                    color: #444;
+                    font-size: 14px;
+                }
+    
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 8px;
+                    border-color: #ECECEC;
+                }
+    
+                &:hover .MuiOutlinedInput-notchedOutline {
+                    border-color: #1976d2;
+                }
+            }
+
+            .MuiInputBase-adornedStart {
+                padding-left: 10px;
+
+                .MuiTypography-body1 {
+                    color: #ACACAC;
+                    font-size: 14px;
+                    font-family: 'OpenSans' !important;
+                }
+
+                input {
+                    border-left: 1px solid #ececec;
+                }
+            }
+        }
+
+        &-input {
+
+            & .MuiInputBase-root {
+                width: 100%;
+                border-radius: 8px;
+                background-color: #F8FAFC;
+    
+                input {
+                    padding: 10px;
+                }
+    
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 8px;
+                }
+    
+                &:hover .MuiOutlinedInput-notchedOutline {
+                    border-color: #1976d2;
+                }
+            }
+        }
+
+        &-select {
+            width: 100%;
+
+            .MuiSelect-select {
+                height: 35px;
+                box-sizing: border-box;
+                line-height: 1;
+                padding: 10px;
+                background-color: #F8FAFC;
+                font-size: 14px;
+                color: #444;
+                font-family: 'OpenSans' !important;
+                border-radius: 8px;
+            }
+
+            .MuiOutlinedInput-notchedOutline  {
+                border-radius: 8px;
+                border-color: #ECECEC;
+            }
+
+            .MuiSvgIcon-root {
+                color: #ACACAC;
+            }
+
+            &.MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline {
+                border-color: #1976d2;
+            }
+        }
+
+        &.switch {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                cursor: pointer;
+            }
+
+            .tooltip {
+                color: #51A3FF !important;
+            }
+        }
+
+        &.description {
+            display: flex;
+            align-items: top;
+            justify-content: space-between;
+
+            & .MuiInputBase-root {
+                border-radius: 8px;
+                background-color: #F8FAFC;
+                width: 100%;
+                min-height: 100px;
+                align-items: start;
+
+                textarea {
+                    font-family: 'OpenSans' !important;
+                    color: #444;
+                    font-size: 14px;
+                }
+    
+                input {
+                    padding: 10px;
+                }
+    
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 8px;
+                    border-color: #ECECEC;
+                }
+    
+                &:hover .MuiOutlinedInput-notchedOutline {
+                    border-color: #1976d2;
+                }
+            }
+        }
+
+        &.notes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & .MuiInputBase-root {
+                border-radius: 8px;
+                background-color: #F8FAFC;
+                width: 100%;
+                align-items: start;
+    
+                input {
+                    padding: 10px;
+                    height: 35px;
+                    box-sizing: border-box;
+                    color: #444;
+                    font-size: 14px;
+                    font-family: 'OpenSans' !important;
+                }
+    
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 8px;
+                    border-color: #ECECEC;
+                }
+    
+                &:hover .MuiOutlinedInput-notchedOutline {
+                    border-color: #1976d2;
+                }
+            }
+
+            .tooltip {
+                color: #51A3FF !important;
+            }
+        }
+
+        &.estimate {
+            display: flex;
+            align-items: top;
+            justify-content: space-between;
+
+            & .MuiFormControl-root{
+                max-width: unset;
+                width: 100%;
+
+                textarea {
+                    font-family: 'OpenSans' !important;
+                    font-size: 14px;
+                    color: #444;
+                }
+            }
+
+            & .MuiInputBase-root {
+                border-radius: 8px;
+                background-color: #F8FAFC;
+                width: 100%;
+                min-height: 100px;
+                align-items: start;
+    
+                input {
+                    padding: 10px;
+                }
+    
+                .MuiOutlinedInput-notchedOutline {
+                    border-radius: 8px;
+                    border-color: #ECECEC;
+                }
+    
+                &:hover .MuiOutlinedInput-notchedOutline {
+                    border-color: #1976d2;
+                }
+            }
+        }
+
+        .MuiPaper-root {
+            width: 100%;
+            color: #93742A;
+            background-color: #FCF6EC;
+            border-color: #93742A;
+            border-radius: 8px;
+        }
+
+        .MuiToggleButtonGroup-root {
+            justify-content: end;
+            padding: 10px 0;
+
+            .MuiButtonBase-root {
+                background-color: transparent;
+                border: unset;
+                padding-top: 0;
+                padding-bottom: 0;
+                text-transform: none;
+                font-size: 14px;
+
+                &:last-child {
+                    border-left: 1px solid #51A3FF;
+                    padding-right: 0;
+                }
+
+                &.Mui-selected {
+                    color: #51A3FF;
+                }
+
+                &:hover {
+                    background-color: unset;
+                }
+            }
+        }
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+
+        &-submit.MuiButtonBase-root {
+            text-transform: none;
+            color: #fff;
+            background-color: #51A3FF;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-top: 20px;
+            font-family: 'OpenSans' !important;
+            height: 40px;
+            box-sizing: border-box;
+
+            &:hover {
+                text-transform: none;
+                color: #fff;
+                background-color: #51A3FF;
+                padding: 10px 24px;
+                border-radius: 30px;
+            }
+        }
+
+        
+        &-reset.MuiButtonBase-root {
+            text-transform: none;
+            color: #888888;    
+            background-color: #fff;
+            padding: 10px 24px;
+            border-radius: 30px;
+            border: 1px solid #cdcdcd;
+            font-size: 14px;
+            margin-top: 20px;
+            font-family: 'OpenSans' !important;
+            height: 40px;
+            box-sizing: border-box;
+
+            &:hover {
+                text-transform: none;
+                color: #888888;    
+                background-color: #fff;
+                padding: 10px 24px;
+                border-radius: 30px;
+                border: 1px solid #cdcdcd;
+            }
+        }
+    }
+}
+
+.products-changecategorypopup {
+    width: 80%;
+    max-width: 630px;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-sizing: border-box;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #ECECEC;
+
+
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 20px;
+            color: #51A3FF;
+
+            p {
+                font-family: 'OpenSans' !important;
+            }
+        }
+        
+        &-btn {
+            .MuiButtonBase-root {
+                color: #51A3FF;
+            }
+        }
+    }
+
+    &-list {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        // gap: 20px;
+    }
+
+    &-item {
+        padding-bottom: 20px;
+
+        &.pb-0 {
+            padding-bottom: 0;
+        }
+
+        &.flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-title {
+            width: auto;
+            font-size: 14px;
+            color: #444;
+            font-family: 'OpenSans' !important;
+        }
+
+        .MuiFormControl-root {
+            width: 80%;
+            max-width: 380px;
+        }
+
+        &-select {
+            width: 100%;
+
+            .MuiSelect-select {
+                padding: 10px;
+                background-color: #F8FAFC;
+                height: 35px !important;
+                box-sizing: border-box;
+                color: #444;
+                font-size: 14px;
+                font-family: 'OpenSans' !important;
+                line-height: 15px;
+                border-radius: 8px;
+            }
+
+            .MuiOutlinedInput-notchedOutline  {
+                border-radius: 8px;
+                border-color: #ECECEC;
+            }
+
+            .MuiSvgIcon-root {
+                color: #ACACAC;
+            }
+
+            &.MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline {
+                border-color: #1976d2;
+            }
+        }
+
+
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+
+        &-submit.MuiButtonBase-root {
+            text-transform: none;
+            color: #fff;
+            background-color: #51A3FF;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-top: 20px;
+            font-family: 'OpenSans' !important;
+            height: 40px;
+            box-sizing: border-box;
+
+            &:hover {
+                text-transform: none;
+                color: #fff;
+                background-color: #51A3FF;
+                padding: 10px 24px;
+                border-radius: 30px;
+            }
+        }
+
+        
+        &-reset.MuiButtonBase-root {
+            text-transform: none;
+            color: #888888;    
+            background-color: #fff;
+            padding: 10px 24px;
+            border-radius: 30px;
+            border: 1px solid #cdcdcd;
+            font-size: 14px;
+            margin-top: 20px;
+            font-family: 'OpenSans' !important;
+            height: 40px;
+            box-sizing: border-box;
+
+            &:hover {
+                text-transform: none;
+                color: #888888;    
+                background-color: #fff;
+                padding: 10px 24px;
+                border-radius: 30px;
+                border: 1px solid #cdcdcd;
+            }
+        }
+    }
+}

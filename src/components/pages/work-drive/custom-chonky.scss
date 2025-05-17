@@ -1,0 +1,319 @@
+.siteWrapperLG .cloud-page.work-drive-cloud-page {
+    margin: 0 auto;
+}
+
+.chonky-chonkyRoot {
+    border: unset !important;
+    background-color: unset !important;
+    padding: 0 !important;
+
+
+    & .cloud-page__header_work-drive-page-details_search {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    & .MuiGrid-container {
+        align-items: start;
+    } 
+
+
+    & .chonky-toolbarWrapper {
+
+        & .chonky-toolbarContainer {
+            align-items: center;
+            justify-content: space-between;
+
+            & .MuiButton-root {
+                color: #727272 !important;
+                padding: 0px 15px;
+                // padding: 0;
+            }
+
+            & .MuiButton-root.chonky-activeButton {
+                color: #4382c4 !important;
+            }
+
+            & .chonky-toolbarLeft {
+                max-width: 35%;
+
+                & .chonky-infoContainer {
+                    display: none;
+                    & .chonky-infoText {
+                        width: max-content;
+                    }
+                }
+                
+                & .chonky-searchFieldContainer{
+                    height: auto !important;
+                    max-width: 350px;
+
+                    & .MuiInputBase-root {
+                        border: unset;
+                        border-radius: 8px;
+                        padding: 5px 10px;
+                        // background-color: rgba(255, 255, 255, 0.7);
+                        background-color: #ffffff80;
+                        height: 36px;
+                        color: #3C3C43B2;
+                        width: 310px;
+                        margin: 0;
+                        padding-left: 10px !important;
+
+                        & .MuiInputAdornment-root {
+                            width: 18px;
+                            height: 18px;
+                            background: url('../../../assets/images/header/new-icons/search.svg') center center no-repeat;
+                            background-size: cover;
+
+                            svg {
+                                display: none;
+                            }
+                        }
+                
+
+                        &::before, &::after {
+                            display: none;
+                        }
+
+                        & .MuiInputBase-input {
+                        //   color: #3C3C43b3;
+                        color: #3C3C43B2;
+                          opacity: 1;
+                          font-size: 15px !important;
+                        }
+
+                        .MuiInputBase-input::placeholder {
+                            // color: #3C3C43b3 !important;
+                            color: #3C3C43B2;
+                            opacity: 1;
+                        }
+                    }
+
+                    & .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, .MuiOutlinedInput-notchedOutline {
+                        border: unset !important;
+                    }
+                }
+            }
+
+            & .chonky-toolbarRight {
+                gap: 10px;
+                
+                button:nth-child(1) {
+                    display: none;
+                }
+
+                button:nth-child(4) {
+                    display: none;
+                }
+
+                svg {
+                    // width: 18px;
+                    // height: 18px;
+                    // stroke: #fff;
+                    // stroke-width: 15px;
+                    // background: url('../../../assets/images/header/new-icons/list.png');
+                }
+
+                button:nth-child(2) {
+                 
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                        background: url('../../../assets/images/work-drive/list.svg') center center no-repeat;
+                        margin-top: 10px;
+
+                        path {
+                            display: none;
+                        }
+                    }
+                }
+
+                button:nth-child(3) {
+                 
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        background: url('../../../assets/images/work-drive/grid.svg') center center no-repeat;
+                        margin-top: 10px;
+
+
+                        path {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    & .chonky-navbarWrapper {
+        & .MuiButton-root {
+            color: #555555 !important;
+
+            &.Mui-disabled {
+                color: #ADABA8 !important;
+            }
+        }
+
+    }
+    
+
+    .chonky-fileListWrapper {
+        padding: 20px;
+        padding-top: 0;
+        box-sizing: border-box;
+        height: calc(100% - 50px);
+
+        & .chonky-gridContainer {
+
+            margin-top: 30px;
+        
+            & > div {
+                width: 100% !important;
+                height: 100% !important;    
+
+                & > div {
+                    padding-right: 15px !important;
+                    padding-bottom: 15px !important;
+                }
+            }
+    
+            & [class^="fillParent-"] {
+
+                & [class^="gridFileEntry-"] {
+                    background: #FFFFFF;
+                    border: 1px solid #F2F2F2;
+                    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+                    border-radius: 8px;
+                    padding: 10px 15px;
+                    box-sizing: border-box;
+                    justify-content: space-around;
+                    cursor: pointer;
+                    border: 1px solid #F2F2F2;
+        
+                    & [class^="previewFile-"] {
+                        width: 50%;
+                        height: 50%;
+                        flex-grow: unset;
+        
+                        & [class^="folderBackSideMid-"] {
+                            box-shadow: unset;
+                            background-color: unset;
+                        }
+        
+                        & [class^="folderBackSideTop-"] {
+                            background-color: #4382C4;
+                            box-shadow: unset;
+                            top: -8px;
+                            left: 0px;
+                            right: 60%;
+                            height: 8px;
+                            position: absolute;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 10px;
+                            width: 50%;
+                        }
+        
+                        & [class^="folderFrontSide-"] {
+                            box-shadow: unset;
+                            background-color: #4382C4;
+                            inset: 0px 0px 0px;
+                            overflow: hidden;
+                            position: absolute;
+                            border-radius: 0px 5px 5px 5px;
+                        }
+    
+                    }
+                    
+                    // & .previewFile-0-2-32 {
+                    //     box-shadow: unset;
+                    // }
+                }
+
+
+
+                & [class^="gridFileEntryNameContainer-"] {
+                    text-align: left;
+                    white-space: nowrap;
+                    overflow-x: hidden;
+                    text-overflow: ellipsis;
+                    color: #333333;
+                    padding-top: 0;
+                    height: 18px;
+
+                    & span {
+                        padding: 0 !important;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+
+        & [class^="listContainer-"] {
+            & [class^="listFileEntry-"] {
+                cursor: pointer;
+
+                & [class^="listFileEntryName-"] {
+                    color: #333;
+                    line-height: 22px;
+                    font-size: 15px;
+                }
+
+                & [class^="listFileEntryProperty-"] {
+                    text-align: left;
+                }
+                
+
+                div:nth-child(3) {
+                    order: 1;
+                }
+                
+                div:nth-child(4) {
+                    order: 2;
+                }
+                
+                div:nth-child(5) {
+                    order: 4;
+                    flex: 0 1 170px;
+                    color: #333;
+                    font-size: 15px;
+                }
+                
+                div:nth-child(6) {
+                    order: 3;
+                    flex: 0 1 120px;
+                }
+            }
+
+            & > div {
+                height: 100% !important;
+                overflow: auto;
+
+                & div:not([class]) {
+                    height: 45px !important;
+                    position: relative !important;
+                    top: 0 !important;
+                }
+            }
+
+            & [class^="selectionIndicator-"] {
+                // background: #3089dc61;
+                background: #F5F5F5;
+                opacity: 1;
+            }
+        }
+
+        & .fileIcon-0-2-31 {
+            opacity: 1 !important;
+        }
+
+        & [class^="selectionIndicator-"] {
+            background: #3089dc61;
+        }
+
+    }
+
+}

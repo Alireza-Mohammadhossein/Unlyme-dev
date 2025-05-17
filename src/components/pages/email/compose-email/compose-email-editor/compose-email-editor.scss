@@ -1,0 +1,86 @@
+.compose-email-editor {
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__actions {
+    width: max-content;
+    height: 35px;
+    border: 1px solid #E8E7E4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 5px;
+
+    &-select {
+      // height: 25px;
+
+      .MuiSelect-select {
+        padding: 0 !important;
+        height: 100% !important;
+        display: flex;
+        align-items: center;
+      }
+
+      .MuiInputBase-root {
+        padding: 0 !important;
+      }
+
+      .MuiSelect-nativeInput {
+        padding: 0;
+        height: 100%;
+      }
+
+      .MuiOutlinedInput-notchedOutline {
+        display: none;
+      }
+
+      .MuiSvgIcon-root {
+        display: none;
+      }
+    }
+
+    &-divider {
+      width: 1px;
+      height: 25px;
+      background-color: #E8E7E4;
+    }
+
+    button.MuiButtonBase-root {
+      padding: 5px;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    overflow-y: auto;
+
+    .tiptap {
+      padding: 0;
+
+      &.ProseMirror.ProseMirror-focused {
+        padding: 0;
+      }
+
+      & > p:first-child:not(.is-empty) {
+        font-size: 15px;
+        font-weight: 400;
+
+        & strong {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+
+      & strong {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}

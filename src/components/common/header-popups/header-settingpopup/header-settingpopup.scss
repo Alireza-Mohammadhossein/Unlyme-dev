@@ -1,0 +1,456 @@
+.isnot-home .setting-popup {
+  width: max-content;
+  position: relative;
+} 
+
+
+.setting-popup {
+  width: 390px;
+  // height: calc(100% - 190px);
+  height: calc(100% - 135px);
+  max-height: 90vh;
+  padding: 15px;
+  border-radius: 18px;
+  // background: rgba(223, 233, 248, 0.65);
+  background: rgba(223, 233, 248, 0.37);
+  // box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.3019607843);
+  backdrop-filter: blur(30px);
+  display: flex;
+  z-index: 3;
+  flex-direction: row;
+  // height: 100%;
+  position: fixed;
+  transition: all 0.3s ease;
+  right: 20px;
+  // top: 69px;
+  top: 90px;
+  box-sizing: border-box;
+  // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+
+    &-list {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      display: flex;
+      padding: 20px;
+      border-radius: 8px;
+      background: #FFF;
+    
+      &__header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    
+        &-title {
+          color: #000;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+    
+    
+        &-actions {
+          display: flex;
+          gap: 20px;
+    
+          &_language-selector {
+            button.MuiButtonBase-root {
+              display: flex;
+              gap: 6px;
+              color: #333;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              border: unset;
+              background-color: transparent;
+              text-transform: none;
+              padding: 5px 8px;
+    
+              &:hover {
+                border: unset;
+                background-color: transparent;
+              } 
+    
+              .MuiButton-startIcon {
+                margin: 0;
+              }
+    
+              .MuiButton-endIcon {
+                margin: 0;
+              }
+            }
+          }
+    
+          &_close {
+            button.MuiButtonBase-root {
+              margin-right: -3px;
+              padding: 3px;
+            }
+          }
+    
+        }
+      }
+    
+      &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        &-user {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 0;
+          border-bottom: 1px solid #E0E0E0;
+    
+          &_img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+          }
+    
+          &_name {
+            color: #333;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            text-transform: capitalize;
+          }
+    
+          &_email {
+            color: #828282;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 20px;
+          }
+        }
+    
+        &-balance {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 30px;
+    
+          &_info {
+            display: flex;
+            flex-direction: column;
+    
+            &-title {
+              color: #828282;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+      
+            &-amount {
+              color: #4F4F4F;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+        }
+    
+        &-topup {
+          padding: 20px 0 30px 0;
+          width: 100%;
+          border-bottom: 1px solid #E0E0E0;
+    
+          button.MuiButtonBase-root {
+            font-size: 16px;
+            background-color: #4382C4;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            border-radius: 8px;
+            text-transform: none;
+            height: 44px;
+            box-sizing: border-box;
+          }
+        }
+      }
+
+      &__footer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 20px;
+    
+        &-options {
+          button.MuiButtonBase-root {
+            color: #333;
+            font-family: "OpenSans" !important;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: none;
+    
+            &:hover {
+              background-color: unset;
+            }
+          }
+        }
+      }
+    }
+
+
+    &-topup {
+      height: 100%;
+      background-color: white;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 100px;
+    
+    
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        &_back {
+          button.MuiButtonBase-root {
+            margin-left: -3px;
+            padding: 3px;
+          }
+        }
+    
+        &_title {
+          color: #000;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+    
+        &_close {
+          button.MuiButtonBase-root {
+            color: #828282;
+            margin-right: -3px;
+            padding: 3px;
+    
+            .MuiSvgIcon-root {
+              color: #828282;
+            }
+          }
+        }
+      }
+    
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        box-sizing: border-box;
+        width: 100%;
+        
+        &_title {
+          color: #828282;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: normal;
+        }
+    
+        &_amount {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          height: 76px;
+          padding: 18px 22px 18px 13px;
+          box-sizing: border-box;
+          border-radius: 12px;
+          border: 1px solid #4382C4;
+          background: rgba(248, 250, 252, 0.50);
+          box-shadow: 0px 0px 0px 4px rgba(81, 163, 255, 0.20);
+    
+          &-title {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+    
+            p:nth-child(1) {
+              color: #828282;
+              font-size: 12px;
+              font-weight: 400;
+            }
+            
+            p:nth-child(2) {
+              color: #333;
+              font-size: 13px;
+              font-weight: 400;
+            }
+          }
+    
+          &-number {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+    
+            input {
+              width: 100%;
+              color: #000;
+              font-size: 24px;
+              font-weight: 600;
+              border: unset;
+              padding: 0;
+              height: 100%;
+            }
+    
+            /* Chrome, Safari, Edge, Opera */
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+    
+            /* Firefox */
+            input[type=number] {
+              -moz-appearance: textfield;
+            }
+          }
+        }
+    
+        &_actions {
+          margin-top: 14px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+    
+          &-btn.MuiButtonBase-root {
+            font-size: 16px;
+            background-color: #4382C4;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            border-radius: 8px;
+            text-transform: none;
+            height: 44px;
+            box-sizing: border-box;
+            
+    
+            &:hover {
+              color: #fff;
+              background: #4382C4;
+            }
+
+            &.disabled {
+              background-color: #BDBDBD;
+              color: #fff;
+
+              &:hover {
+                color: #fff;
+                background: #BDBDBD;
+              }
+            }
+          }
+    
+          &-flags {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+          }
+        }
+      }
+    }
+}
+
+
+
+
+
+// .dark .setting-popup {
+//   background-color: $dark-theme-background-color;
+
+//   &-list {
+//     &__header {
+//       border-color:#7c7c7c;
+
+//       &_user {
+//         &-info {
+//           &-name {
+//             color: $dark-theme-title-color;
+//           }
+//           &-mail {
+//             color: $dark-theme-subtitle-color;
+//           }
+//         }
+//       }
+
+//       &-actions {
+//         & .MuiSvgIcon-root {
+//           color: $dark-theme-title-color;
+//         }
+//       }
+//     }
+  
+//     &__body {
+//       &-content {
+//         &_item {
+//           border-color: #7c7c7c;
+//           &-title {
+//             color: $dark-theme-title-color;
+//           }
+
+//           &-selector {
+//             color: $dark-theme-subtitle-color;
+//             border-color: #7c7c7c;
+
+//             &:hover {
+//               background-color: rgb(255 252 252 / 30%);
+//             }
+//           }
+
+//           & .Mui-selected {
+//             color: $dark-theme-title-color;
+//             background-color: rgb(255 252 252 / 30%);
+
+//             &:hover {
+//               background-color: rgb(255 252 252 / 30%);
+//             }
+//           }
+
+//         }
+
+//       }
+
+//     }
+
+//     &__footer {
+//       border-color: #7c7c7c;
+
+//       &-options {
+//         &-setting {
+//           color: $dark-theme-title-color !important;
+//         }
+        
+//         &-logout {
+//           color: #ff4343 !important;
+//         }
+//       }
+//     }
+//   }  
+// }

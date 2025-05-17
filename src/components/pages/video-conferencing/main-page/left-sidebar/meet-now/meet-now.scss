@@ -1,0 +1,139 @@
+.meetnow {
+    padding: 10px;
+
+    &-actions {
+        button.MuiButtonBase-root {
+            border: unset;
+            color: #333;
+            font-size: 15px;
+            font-weight: 500 !important;
+            text-transform: capitalize;
+            padding-left: 0;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+
+    &-content {
+
+        &_icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 54px;
+                height: 54px;
+            }
+
+            p {
+                color: #333;
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+
+        &_form {
+            padding: 30px 3vw;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .MuiFormControl-root  {
+                width: 100%;
+                background-color: #F8FAFC;
+                border-radius: 8px;
+            }
+
+            &-item {
+                &-title {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin-bottom: 5px;
+                    color: #333;
+
+                    &-info {
+                        color: #888888;
+                        display: block;
+                        margin-bottom: 5px;
+                        font-size: 13px;
+                    }
+                }
+
+                &-input {
+                    input {
+                        border-radius: 8px;
+                        background-color: #F8FAFC;
+                        padding: 10px;
+                        height: 40px;
+                        box-sizing: border-box;
+                        font-family: 'OpenSans' !important;
+                    }
+
+                    .MuiOutlinedInput-notchedOutline {
+                        border-radius: 8px;
+                    }
+
+                    .MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline {
+                        border-color: #1976d2;
+                    }
+
+                    .MuiOutlinedInput-notchedOutline {
+                        border-color: #ECECEC !important;
+                    }
+                }
+
+                &-switch {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &-label {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        cursor: pointer;
+                                                
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #333;
+
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    &-btn {
+
+                    }
+                }
+
+                &-submit {
+                    text-align: right;
+
+                    &-btn.MuiButtonBase-root {
+                        padding: 10px 25px;
+                        background-color: #51A3FF;
+                        color: #ffffff;
+                        border-radius: 30px;
+                        font-size: 14px;
+                        text-transform: none;
+                        line-height: unset;
+                        
+                        &:hover {
+                            background-color: #51A3FF;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

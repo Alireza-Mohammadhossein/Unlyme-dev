@@ -1,0 +1,155 @@
+.compose-email {
+  & .MuiGrid-root.MuiGrid-item {
+    width: 100%;
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    width: 100%;
+    // padding: 10px;
+    box-sizing: border-box;
+    // height: 30px;
+    display: flex;
+    justify-content: end;
+    
+    &-actions {
+
+      .MuiButtonGroup-root {
+        gap: 10px;
+      }
+
+      button.MuiButtonBase-root {
+        padding: 5px;
+      }
+    }
+  }
+
+  &__info {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &-item {
+      min-height: 32px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      &_title {
+        width: 100px;
+        height: 100%;
+        font-size: 13px;
+        font-weight: 500;
+        color: #333;
+      }
+
+      &_text {
+        width: 100%;
+        min-height: 31px;
+        padding: 0 14px;
+        border-bottom: 1px solid #E8E7E4;
+        font-size: 13px;
+        font-weight: 400;
+        color: #333;
+
+        .MuiInputBase-root {
+          min-height: 31px;
+          color: #333;
+          gap: 10px;
+          padding: 0 !important;
+          align-items: flex-start;
+
+          .MuiOutlinedInput-notchedOutline {
+            display: none;
+          }
+
+          .MuiButtonBase-root  {
+            margin: 0;
+            color: #333;
+            height: 28px;
+            font-size: 13px;
+            // padding: 0;
+          }
+
+          .MuiInputBase-input.MuiOutlinedInput-input.MuiAutocomplete-input {
+            margin: 0;
+            color: #333;
+            height: 28px;
+            font-size: 13px;
+            padding: 0;
+          }
+          
+        }
+
+        .MuiFormControl-root {
+          width: 100%;
+
+          .MuiInputBase-input {
+            padding: 0;
+            font-size: 13px;
+          }
+        }
+
+        
+      }
+    }
+  }
+
+  &__message {
+    height: 100%;
+  }
+
+  &__footer {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    
+    &-left {
+      .MuiButtonGroup-root {
+        gap: 10px;
+      }
+
+      button.MuiButtonBase-root {
+        padding: 5px;
+      }
+    }
+
+    &-right {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+
+      p {
+        font-size: 13px;
+        color: #666;
+      }
+
+      button.send-btn {
+        background-color: #51A3FF;
+        color: #fff;
+        border-radius: 60px;
+        padding: 10px 20px !important;
+        font-size: 14px;
+        font-weight: 500;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+      }
+
+      span {
+        color: #4382C4;
+      }
+    }
+  }
+}

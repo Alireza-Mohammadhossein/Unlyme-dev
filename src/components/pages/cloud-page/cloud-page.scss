@@ -1,0 +1,155 @@
+.cloud-page {
+    background: rgba(223, 233, 248, 0.37);
+    // backdrop-filter: blur(8px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), inset 0px 0px 0px 1px #ffffff4d;
+    border-radius: 16px;
+    transition: all 0.5s ease;
+    
+    height: 100%;
+    box-sizing: border-box;
+
+    &__header {
+      // height: 80px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &_share {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &_icon {
+          width: 45px;
+          height: 45px;
+  
+          img {
+            width: inherit;
+            height: inherit;
+          }
+        }
+  
+        &_title {
+          font-size: 20px;
+          font-weight: 400;
+          margin-left: 10px;
+          color: #000000;
+        }
+      }
+
+      &_details {
+        text-align: right;
+
+        img {
+          width: 22px;
+          height: 22px;
+        }
+
+        &.calendar-app__header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .calendar-app__header-right {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            &_actions {
+              display: flex;
+              gap: 10px;
+              background-color: rgba(223, 233, 248, 0.65);
+              border-radius: 8px;
+              margin-right: 20px;
+
+              button.MuiButtonBase-root {
+                font-size: 14px;
+                color: #6B686A;
+                background-color: unset;
+                border-radius: 8px;
+                padding: 10px 15px;
+                border: unset;
+                line-height: unset;
+                text-transform: capitalize;
+
+                &.active {
+                  background-color: rgba(118, 118, 128, 0.1215686275);
+                }
+              }
+            }
+          }
+
+          .calendar-app__header-left {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            &_actions {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+
+              button.MuiButtonBase-root {
+                min-width: unset;
+                border-radius: 100px;
+                width: 30px;
+                height: 30px;
+  
+                img {
+                  width: 14px;
+                  height: 14px;
+                }
+              }
+
+              span {
+                color: #414141;
+                display: inline-block;
+                font-weight: 400;
+              }
+            }
+
+
+           
+
+          }
+        }
+      }
+
+      &_calendar-container {
+        display: grid;
+        grid-template-columns: 234px auto;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &__temp-gap {
+      height: 130px;
+    }
+    &__content {
+      padding: 0 10px 10px 10px;
+      height: calc(100% - 80px);
+      box-sizing: border-box;
+
+      &.notes-page {
+        position: relative;
+        // top: -58px;
+        // top: -10px;
+
+        // .grid-content_right {
+        //   overflow: visible;
+        // }
+      }
+    }
+  }
+
+  .siteWrapperXL .cloud-page {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  
+  .siteWrapperLG .cloud-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
