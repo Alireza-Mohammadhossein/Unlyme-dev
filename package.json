@@ -1,7 +1,7 @@
 {
   "name": "unlyme",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://github.com/Alireza-Mohammadhossein/Unlyme",
   "private": true,
   "dependencies": {
     "@emoji-mart/data": "^1.1.2",
