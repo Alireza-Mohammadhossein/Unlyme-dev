@@ -102,17 +102,6 @@ export default function Card({ card, index, listId, data }) {
     const anchor = document.createElement('a');
 
     card.files.forEach((file, index) => {
-      // const blob = new Blob([file], { type: file.type });
-
-      // anchor.href = URL.createObjectURL(blob);
-
-      // anchor.download = file.name;
-      // anchor.click();
-
-      // URL.revokeObjectURL(anchor.href);
-
-      
-      // const decodedData = atob(file.dataURL.split('.')[1]);
       const decodedData = file.dataURL.toString('base64'); // Decode base64 data
 
       const byteArray = new Uint8Array(decodedData.length);
@@ -195,24 +184,7 @@ export default function Card({ card, index, listId, data }) {
                       onFocus={(e) => e.target.select()}
                       multiline
                     />
-                    // <textarea
-                    //   className="card-content_info-title-textarea"
-                    //   value={newTitle}
-                    //   onClick={(e) => {
-                    //     e.stopPropagation();
-                    //   }}
-                    //   onChange={(e) => setNewTitle(e.target.value)}
-                    //   onBlur={handleOnBlur}
-                    //   onKeyDown={(e) => {
-                    //     if (e.key === "Enter") {
-                    //       handleOnBlur(e);
-                    //     }
-                    //     return;
-                    //   }}
-                    //   rows={20}
-                    //   autoFocus
-                    //   onFocus={(e) => e.target.select()}
-                    // />
+                
                     ) :
                         (
                           <p>
@@ -228,15 +200,6 @@ export default function Card({ card, index, listId, data }) {
                     }
                 </div>
                 
-                {/* {card.members ? (
-                  <div className="card-content_info-members">
-                      {card.members.map((member) => (
-                        <Avatar className="card-content_info-members-member">{member[0]}</Avatar>
-                      ))}
-                  </div>
-                ) : (
-                  ""
-                )} */}
               </div>
 
 
@@ -323,34 +286,9 @@ export default function Card({ card, index, listId, data }) {
                 listId={listId}
                 card={card}
               />
-{/* 
-              <ViewModal
-                title={card.title}
-                description={card.description}
-                tags={card.tags}
-                members={card.members}
-                imageFile={card.imageFile}
-                handleCloseViewModal={handleCloseViewModal}
-                openViewModal={openViewModal}
-                setOpenViewModal={setOpenViewModal}
-                index={index}
-                listId={listId}
-              /> */}
 
 
-              {/* <Popover
-                id={idComments}
-                className="comments_popover"
-                open={openComments}
-                anchorEl={anchorElComments}
-                onClose={handleCloseComments}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-              >
-                <Comments card={card} index={index} listId={listId} />
-              </Popover> */}
+
             </div>
           </div>
         </div>

@@ -133,25 +133,7 @@ export default function EmailTable({ activeSingleMail, setActiveSingleMail, emai
 
   const [filteredEmails, setFilteredEmails] = useState(emails);
   
-  // useEffect(() => {
-  //   if (!searchText) {
-  //     setFilteredEmails(emails);
-  //   }
 
-  //   if (searchText) {
-  //     setFilteredEmails(emails.filter( email => {
-  //       const filterValue = searchText.toLowerCase();
-  
-  //       return (
-  //         email.title.toLowerCase().match(filterValue) ||
-  //         email.message.toLowerCase().match(filterValue) ||
-  //         email.subject.toLowerCase().match(filterValue)
-  //       );
-  //     }));
-  //   }
-  // }, [searchText]);
-
-  // end filtering emails based on the search text
 
 
 
@@ -184,15 +166,6 @@ export default function EmailTable({ activeSingleMail, setActiveSingleMail, emai
       ),[filteredEmails, order, orderBy, page, rowsPerPage]
   );
 
-
-  // start showing mail category tab
-  // const [activeMail, setActiveMail] = useState(false);
-  // const handleActiveMail = (event, newValue) => {
-  //   if (event.target === event.currentTarget) {
-  //     setActiveSingleMail(newValue);
-  //   }
-  // };
-  // end showing chat tab
 
 
   // start show single mail handler 
@@ -322,15 +295,7 @@ export default function EmailTable({ activeSingleMail, setActiveSingleMail, emai
               <Table
                 aria-labelledby="tableTitle"
               >
-                {/* <colgroup>
-                  <col style={{width:'30px', boxSizing:'border-box'}}/>
-                  <col style={{width:'30px', boxSizing:'border-box'}}/>
-                  <col style={{width:'50px', boxSizing:'border-box'}}/>
-                  <col style={{width:'140px', boxSizing:'border-box'}}/>
-                  <col style={{width:'250px', boxSizing:'border-box'}}/>
-                  <col style={{width:'50px', boxSizing:'border-box'}}/>
-                  <col style={{width:'100px', boxSizing:'border-box'}}/>
-               </colgroup> */}
+
           
                 <EmailTableHead
                   numSelected={selected.length}

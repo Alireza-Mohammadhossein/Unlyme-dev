@@ -208,44 +208,7 @@ return (
         className='email-header_pagination'
       >
         <div style={{display: 'flex', justifyContent: 'end', gap: '15px'}}>
-          {/* {numSelected > 0 ?
-            <div style={{borderRight: '1px solid rgba(224, 224, 224, 1)'}}>
-              <IconButton
-                aria-label="more"
-                id="long-button"
-                aria-controls={open ? "long-menu" : undefined}
-                aria-expanded={open ? "true" : undefined}
-                aria-haspopup="true"
-                onClick={handleClick}
-                sx={{padding: '5px'}}
-              >
-                <MoreHorizIcon sx={{ color: '#00000080' }} />
-              </IconButton>
-
-              <Menu
-                id="long-menu"
-                MenuListProps={{
-                  "aria-labelledby": "long-button",
-                }}
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                disableScrollLock = {true}
-              >
-                {options.map((option) => (
-                  <MenuItem
-                    key={option}
-                    selected={option === "Pyxis"}
-                    onClick={handleClose}
-                  >
-                    {option}
-                  </MenuItem>
-                ))}
-              </Menu>
-            </div>
-          : 
-            ''
-          } */}
+          
 
           <TablePagination
             // rowsPerPageOptions={[20, 50, 100]}
@@ -285,107 +248,9 @@ return (
           
       </TableCell>
 
-
-      {/* <TableCell padding="checkbox" className='email-header_selected'>
-        <TablePagination
-          // rowsPerPageOptions={[20, 50, 100]}
-          rowsPerPageOptions={[]}
-          component="div"
-          count={emails.length}
-          rowsPerPage={rowsPerPage}
-          page={page}
-          onPageChange={handleChangePage}
-          // onRowsPerPageChange={handleChangeRowsPerPage}
-          labelDisplayedRows = {function defaultLabelDisplayedRows({ from, to, count }) { return `${from}–${to} of ${count !== -1 ? count : `more than ${to}`}`; }}
-          
-          
-        />
-      </TableCell> */}
-
-
-      
-      {/* {headCells.map((headCell) => ( */}
-          {/* headCell.label === 'Date' ? */}
-            {/* <TableCell
-              key={headCell.id}
-              // align={headCell.numeric ? 'right' : 'left'}
-              align="center"
-              padding={headCell.disablePadding ? 'none' : 'normal'}
-              sortDirection={orderBy === headCell.id ? order : false}
-              onClick={sortByDateHandler}
-              sx={{ cursor: 'pointer', maxHeight: 40, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}
-            >
-                Date
-                <ImportExportIcon sx={{color: '#999999', verticalAlign : 'middle'}} />
-            </TableCell>
-          :
-          '' */}
-
-
-          {/* <TableSortLabel
-            active={orderBy === headCell.id}
-            direction={orderBy === headCell.id ? order : 'asc'}
-            onClick={createSortHandler(headCell.id)}
-          >
-            {headCell.label === 'Date' ? 'Date' : ''}
-            {orderBy === headCell.id ? (
-              <Box component="span" sx={visuallyHidden}>
-                {order === 'desc' ? 'sorted descending' : 'sorted ascending'}
-              </Box>
-            ) : null}
-          </TableSortLabel> 
-       ))} */}
-
-
     </TableRow>
 
 
-    {/* <TableRow className='email-filters'>
-      <TableCell padding="checkbox" className='email-filters_read' colSpan={4}>
-        <ToggleButtonGroup
-          value={readMode}
-          exclusive
-          onChange={handleReadMode}
-          aria-label="read mode"
-          align='left'
-          className='email-filters_read-toggler'
-        >
-          <ToggleButton value="all" aria-label="all">
-            All
-          </ToggleButton>
-          <ToggleButton value="read" aria-label="read">
-            Read
-          </ToggleButton>
-          <ToggleButton value="unread" aria-label="unread">
-            Unread
-          </ToggleButton>
-        </ToggleButtonGroup>
-      </TableCell>
-
-      
-
-      
-      {headCells.map((headCell) => (
-          headCell.label === 'Date' ?
-            <TableCell
-              colSpan={3}
-              key={headCell.id}
-              align='right'
-              padding={headCell.disablePadding ? 'none' : 'normal'}
-              sortDirection={orderBy === headCell.id ? order : false}
-              onClick={sortByDateHandler}
-              sx={{ cursor: 'pointer', maxHeight: 40, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}
-              className='email-filters_sort'
-            >
-                Newest first
-                <img src={sortIcon} alt='filter email' />
-            </TableCell>
-          :
-          '' 
-        ))}
-
-
-    </TableRow> */}
   </TableHead>
 );
 }

@@ -20,18 +20,7 @@ const WorkDriveDetailsBar = () => {
               },
             }}>
                 <div className='cloud-page__header_work-drive-page-details_search'>
-                    {/* <FormControl>
-                        <Input
-                        className='cloud-page__header_work-drive-page-details_search-input'
-                        onChange={(e) => setSearchNote(e.target.value)}
-                        placeholder={t('WORK_DRIVE_PAGE.SEARCH_PLACEHOLDER')}
-                        startAdornment={
-                            <InputAdornment position="start">
-                                <SearchIcon sx={{color: '#3C3C43B2'}} />
-                            </InputAdornment>
-                        }
-                        />
-                    </FormControl> */}
+                    
 
                     <div>
                         {/* <FileNavbar />

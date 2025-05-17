@@ -361,46 +361,9 @@ const Header = () => {
             }
             
             
-
-            {/* <div className="header__details-area_items-icon" onClick={() => {
-                  // dispatch(toggleSettingPopup())
-                  handleOpenHeaderSettingPopup()
-                }}>
-                <img
-                  src={settingIcon}
-                  alt="chat"
-                />
-
-            </div> */}
           </div>
-
-          {/* <div className="header__details-area_account">
-            <div className="header__details-area_account-icon" onClick={() => {
-                  dispatch(toggleSettingPopup())
-                }}>
-                <img
-                  src={settingIcon}
-                  alt="chat"
-                />
-
-            </div>
-          </div> */}
         </div>
       </div>
-
-
-      {/* <Modal
-        open={headerSettingPopup}
-        onClose={handleCloseHeaderSettingPopup}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-        className='cloud-page__header_invoice-manager-details_add-modal'
-      >
-        
-        <HeaderSettingPopup handleCloseHeaderSettingPopup={handleCloseHeaderSettingPopup} />
-      </Modal> */}
-
-
       
     </>
   );

@@ -48,14 +48,6 @@ const MyServices = () => {
     // { i: "logo-builder", x: 9, y: 1, w: 6, h: 1 },
 
     { i: "accounting", x: 0, y: 3, w: 6, h: 1 },
-    // { i: "disc", x: 9, y: 2, w: 3, h: 1 },
-
-    // { i: "bank", x: 0, y: 3, w: 6, h: 1 },
-    // { i: "website-builder", x: 6, y: 3, w: 6, h: 1 },
-
-    // { i: "video-conference", x: 0, y: 4, w: 6, h: 1 },
-    // { i: "copy-site", x: 6, y: 4, w: 3, h: 1 },
-    // { i: "services", x: 9, y: 4, w: 3, h: 1 },
   ];
 
   const layoutXL = [
@@ -68,17 +60,7 @@ const MyServices = () => {
 
     { i: "emails", x: 0, y: 2, w: 6, h: 1 },
     { i: "videoConference", x: 6, y: 2, w: 6, h: 1 },
-    // { i: "logo-builder", x: 9, y: 1, w: 6, h: 1 },
-
     { i: "accounting", x: 0, y: 3, w: 6, h: 1 },
-    // { i: "disc", x: 9, y: 2, w: 3, h: 1 },
-
-    // { i: "bank", x: 0, y: 3, w: 6, h: 1 },
-    // { i: "website-builder", x: 6, y: 3, w: 6, h: 1 },
-
-    // { i: "video-conference", x: 0, y: 4, w: 6, h: 1 },
-    // { i: "copy-site", x: 6, y: 4, w: 3, h: 1 },
-    // { i: "services", x: 9, y: 4, w: 3, h: 1 },
   ];
 
   const layoutLG = [
@@ -94,19 +76,6 @@ const MyServices = () => {
     { i: "videoConference", x: 0, y: 4, w: 8, h: 1 },
 
     { i: "accounting", x: 0, y: 5, w: 8, h: 1 },
-    // { i: "asass", x: 4, y: 2, w: 8, h: 1 },
-
-    // { i: "bank", x: 0, y: 3, w: 8, h: 1 },
-    // { i: "logo-builder", x: 8, y: 3, w: 4, h: 1 },
-
-    // { i: "copy-site", x: 0, y: 4, w: 4, h: 1 },
-    // { i: "website-builder", x: 4, y: 4, w: 8, h: 1 },
-
-    // { i: "video-conference", x: 0, y: 5, w: 8, h: 1 },
-    // { i: "disc", x: 8, y: 5, w: 4, h: 1 },
-
-    // { i: "domains", x: 0, y: 6, w: 4, h: 1 },
-    // { i: "services", x: 4, y: 6, w: 4, h: 1 },
   ];
 
   const layoutMD = [
@@ -122,17 +91,6 @@ const MyServices = () => {
     { i: "videoConference", x: 0, y: 3, w: 6, h: 1 },
     { i: "accounting", x: 6, y: 3, w: 6, h: 1 },
 
-    // { i: "bank", x: 0, y: 3, w: 6, h: 1 },
-    // { i: "logo-builder", x: 6, y: 3, w: 6, h: 1 },
-
-    // { i: "copy-site", x: 0, y: 4, w: 6, h: 1 },
-    // { i: "website-builder", x: 6, y: 4, w: 6, h: 1 },
-
-    // { i: "video-conference", x: 0, y: 5, w: 6, h: 1 },
-    // { i: "disc", x: 6, y: 5, w: 6, h: 1 },
-
-    // { i: "services", x: 0, y: 6, w: 6, h: 1 },
-    // { i: "domains", x: 6, y: 6, w: 6, h: 1 },
 
   ];
 
@@ -145,16 +103,6 @@ const MyServices = () => {
     { i: "emails", x: 0, y: 5, w: 12, h: 1 },
     { i: "videoConference", x: 0, y: 6, w: 12, h: 1 },
     { i: "accounting", x: 0, y: 7, w: 12, h: 1 },
-    // { i: "cloud", x: 0, y: 4, w: 12, h: 1 },
-    // { i: "ai", x: 0, y: 5, w: 12, h: 1 },
-    // { i: "bank", x: 0, y: 6, w: 12, h: 1 },
-    // { i: "logo-builder", x: 7, y: 3, w: 12, h: 1 },
-    // { i: "copy-site", x: 0, y: 8, w: 12, h: 1 },
-    // { i: "website-builder", x: 0, y: 9, w: 12, h: 1 },
-    // { i: "video-conference", x: 0, y: 10, w: 12, h: 1 },
-    // { i: "disc", x: 0, y: 11, w: 12, h: 1 },
-    // { i: "domains", x: 0, y: 12, w: 12, h: 1 },
-    // { i: "services", x: 0, y: 13, w: 12, h: 1 },
   ];
 
   const layoutXS = [
@@ -166,33 +114,8 @@ const MyServices = () => {
     { i: "emails", x: 0, y: 5, w: 12, h: 1 },
     { i: "videoConference", x: 0, y: 6, w: 12, h: 1 },
     { i: "accounting", x: 0, y: 7, w: 12, h: 1 },
-    // { i: "cloud", x: 0, y: 4, w: 12, h: 1 },
-    // { i: "ai", x: 0, y: 5, w: 12, h: 1 },
-    // { i: "bank", x: 0, y: 6, w: 12, h: 1 },
-    // { i: "logo-builder", x: 7, y: 3, w: 12, h: 1 },
-    // { i: "copy-site", x: 0, y: 8, w: 12, h: 1 },
-    // { i: "website-builder", x: 0, y: 9, w: 12, h: 1 },
-    // { i: "video-conference", x: 0, y: 10, w: 12, h: 1 },
-    // { i: "disc", x: 0, y: 11, w: 12, h: 1 },
-    // { i: "domains", x: 0, y: 11, w: 12, h: 1 },
-    // { i: "services", x: 0, y: 13, w: 12, h: 1 },
   ];
 
-  // call getFromLS and set layouts to originalLayouts
-
-
-  // const originalLayouts = getFromLS("layouts") || {
-  //   lg:
-  //     screenSize === "XL"
-  //       ? layoutXL
-  //       : screenSize === "LG"
-  //       ? layoutLG
-  //       : screenSize === "MD"
-  //       ? layoutMD
-  //       : screenSize === "SM"
-  //       ? layoutSM
-  //       : layoutXS,
-  // };
 
   const originalLayouts = 
     // getFromLS("layouts") ||
@@ -307,56 +230,6 @@ const MyServices = () => {
             <AccountingBlock />
           </div>
 
-
-
-          {/* <div key="guide">
-            <GuideBlock/>
-          </div> */}
-
-          {/* <div key="ai">
-            <AIEngine />
-          </div> */}
-          
-
-          {/* <div key="cloud">
-            <CloudHostingBlock />
-          </div> */}
-
-          {/* <div key="logo-builder">
-            <LogoBuilder />
-          </div> */}
-
-          {/* <div key="drive">
-            <WorkDrive />
-          </div> */}
-
-          {/* <div key="website-builder">
-            <WebsiteBuilderBlock />
-          </div> */}
-
-          {/* <div key="bank">
-            <BankBlock />
-          </div> */}
-
-          {/* <div key="copy-site">
-            <SiteCopyingBlock />
-          </div> */}
-
-          {/* <div key="video-conference">
-            <VideoConferencingBlock />
-          </div> */}
-
-          {/* <div key="disc">
-            <DiscBlock />
-          </div> */}
-
-          {/* <div key="domains">
-            <DomainsBlock handleCollapse={handleCollapse} />
-          </div> */}
-
-          {/* <div key="services">
-            <Services />
-          </div> */}
         </ResponsiveGridLayout>
       </div>
     </div>
@@ -450,55 +323,3 @@ const MyServices = () => {
 
 export default MyServices;
 
-// if (process.env.STATIC_EXAMPLES === true) {
-//   import("../test-hook.jsx").then((fn) => fn.default(Services));
-// }
-
-// const Services = () => {
-// const { t } = useTranslation();
-
-// return (
-//   <div className="container">
-//     <h1>
-//       {t('MY_SERVICES.H1')}
-//       <span className="btn btn--light-blue" style={{ marginLeft: 30 }}>
-//         Other services
-//       </span>
-//     </h1>
-//     <div className="row">
-//       <div className="col-4">
-//         <CalendarBlock />
-//         <div className="site-vertical-separator" />
-//         <OnlineConsultantBlock />
-//         <div className="site-vertical-separator" />
-//         <VideoConferencingBlock />
-//       </div>
-//       <div className="col-4">
-//         <TasksBlock />
-//         <div className="site-vertical-separator" />
-//         <CloudHostingBlock />
-//         <div className="site-vertical-separator" />
-//         <SiteCopyingBlock />
-//         <div className="site-vertical-separator" />
-//         <CRMBlock />
-//         <div className="site-vertical-separator" />
-//         <InvoiceManagerBlock />
-//       </div>
-//       <div className="col-4">
-//         <BankBlock />
-//         <div className="site-vertical-separator" />
-//         <SiteBuilderBlock />
-//         <div className="site-vertical-separator" />
-//         <DomainsBlock />
-//         <div className="site-vertical-separator" />
-//         <DiscBlock />
-//       </div>
-//     </div>
-//     <div onClick={() => alert('s')} className="services__connect-other">
-//       Connect other services
-//     </div>
-//   </div>
-// );
-// };
-
-// export default Services;

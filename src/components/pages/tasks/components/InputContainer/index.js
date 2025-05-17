@@ -41,79 +41,9 @@ export default function InputContainer({ listId, type }) {
       </Collapse>
 
       
-      {/* <AddModal
-        listId={listId}
-        // type={type}
-        type='card'
-        handleCloseAddModal={handleCloseAddModal} 
-        handleOpenAddModal={handleOpenAddModal} 
-        openAddModal={openAddModal} 
-        setOpenAddModal={setOpenAddModal}
-      />
-
-      <AddList
-        listId={listId}
-        // type={type}
-        type='list'
-        handleCloseAddListModal={handleCloseAddListModal} 
-        handleOpenAddListModal={handleOpenAddListModal} 
-        openAddListModal={openAddListModal} 
-        setOpenAddListModal={setOpenAddListModal}
-      /> */}
     </div>
 
 
-
-    // <div className="input-container" style={{height: '38px'}}>
-    //   {/* <Collapse in={open}>
-    //     <InputCard setOpen={setOpen} listId={listId} type={type} />
-    //   </Collapse> */}
-    //   {/* <Collapse in={!open}> */}
-    //     <div className="input-content">
-    //         {type === "card"
-    //           ? 
-    //             <Button
-    //               className="add-backlog-btn"
-    //               startIcon={<AddIcon />}
-    //               // onClick={() => setOpen(!open)}
-    //               onClick={handleOpenAddModal}
-    //               aria-label="add new card"
-    //             >
-    //               Add New Card
-    //             </Button>
-    //           : 
-    //             <Button
-    //               className="add-backlog-btn list"
-    //               startIcon={<AddIcon />}
-    //               // onClick={() => setOpen(!open)}
-    //               onClick={handleOpenAddListModal}
-    //             >
-    //               Add another list
-    //             </Button>
-    //         }
-    //     </div>
-        
-    //     <AddModal
-    //       listId={listId}
-    //       // type={type}
-    //       type='card'
-    //       handleCloseAddModal={handleCloseAddModal} 
-    //       handleOpenAddModal={handleOpenAddModal} 
-    //       openAddModal={openAddModal} 
-    //       setOpenAddModal={setOpenAddModal}
-    //     />
-
-    //     <AddList
-    //       listId={listId}
-    //       // type={type}
-    //       type='list'
-    //       handleCloseAddListModal={handleCloseAddListModal} 
-    //       handleOpenAddListModal={handleOpenAddListModal} 
-    //       openAddListModal={openAddListModal} 
-    //       setOpenAddListModal={setOpenAddListModal}
-    //     />
-    //   {/* </Collapse> */}
-    // </div>
 
   );
 }

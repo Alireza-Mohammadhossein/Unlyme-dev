@@ -102,22 +102,6 @@ function TabPanel(props) {
       setValue(newValue);
     };
 
-    // const [SelectedShortcut, setSelectedShortcut] = useState(null);
-
-
-    // const [openShortcut, setOpenShortcut] = useState(false);
-
-    // const handleOpenShortcut = (component) => {
-    //   setSelectedShortcut(component);
-    //   setOpenShortcut(true);
-    //   console.log('selected', SelectedShortcut);
-    //   console.log('component', component);
-    // };
-    // const handleCloseShortcut = () => {
-    //   setSelectedShortcut(null);
-    //   setOpenShortcut(false);
-    // };
-
 
     const [shortcutPopup, setShortcutPopup] = useState(false);
 
@@ -145,49 +129,7 @@ function TabPanel(props) {
                 Open Apps
             </Button>
             
-            {/* <Menu
-                id="long-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                disableScrollLock = {true}
-            >
-                <MenuItem
-                    onClick={handleClose}
-                >
-                  <Button
-                    startIcon={<AddIcon />}
-                    className="meeting-page_sidebar_open-apps_item-btn"
-                    onClick={() => openShortcutModalHandler('CalendarShortcut')}
-                  >
-                    Add Calendar
-                  </Button>
-                </MenuItem>
-
-                <MenuItem
-                    onClick={handleClose}
-                >
-                  <Button
-                    startIcon={<AddIcon />}
-                    className="meeting-page_sidebar_open-apps_item-btn"
-                    onClick={() => openShortcutModalHandler('TasksShortcut')}
-                  >
-                    Add Tasks
-                  </Button>
-                </MenuItem>
-
-                <MenuItem
-                    onClick={handleClose}
-                >
-                  <Button
-                    startIcon={<AddIcon />}
-                    className="meeting-page_sidebar_open-apps_item-btn"
-                    onClick={() => openShortcutModalHandler('NotesShortcut')}
-                  >
-                    Add Notes
-                  </Button>
-                </MenuItem>
-            </Menu> */}
+          
 
             <Menu
                 id="video-conference-apps"
@@ -266,23 +208,6 @@ function TabPanel(props) {
               </TabPanel>
           </div>
 
-          {/* <Modal
-            open={openAppsShortcut}
-            onClose={closeShortcutModalHanlder}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
-            className="shortcut-modal"
-            disableEnforceFocus 
-          >
-            <div className='shortcut-modal-container' >
-              {
-                selectedShortcut === 'CalendarShortcut' ? <CalendarShortcut /> :
-                selectedShortcut === 'TasksShortcut' ? <TasksShortcut /> :
-                selectedShortcut === 'NotesShortcut' ? <NotesShortcut /> :
-                ''
-              }
-            </div>
-          </Modal> */}
 
 
           <Drawer

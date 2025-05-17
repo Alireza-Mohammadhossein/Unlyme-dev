@@ -25,17 +25,7 @@ export default function List({ list, index, data }) {
             className={`list-cards ${snapshot.isDragging ? 'dragged-item' : ''}`}
             {...provided.dragHandleProps}
           >
-            {/* <div className="title-list">
-              <Title title={list.title} listId={list.id} collapseColumns={collapseColumns} collapse={collapse} />
-            </div> */}
 
-            {/* {list.id === 'list-1' ?
-                <InputContainer listId={list.id} type="list" />
-              :
-              <div className="title-list">
-                <Title title={list.title} listId={list.id} collapseColumns={collapseColumns} collapse={collapse} />
-              </div>
-            } */}
 
             <div className="title-list">
               <Title title={list.title} listId={list.id} collapseColumns={collapseColumns} collapse={collapse} />

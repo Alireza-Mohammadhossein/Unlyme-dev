@@ -1,7 +1,7 @@
 {
   "name": "unlyme",
   "version": "0.1.0",
-  "homepage": "https://github.com/Alireza-Mohammadhossein/Unlyme",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@emoji-mart/data": "^1.1.2",
@@ -42,7 +42,6 @@
     "@tiptap/extension-text-style": "^2.1.16",
     "@tiptap/starter-kit": "^2.1.16",
     "axios": "^1.5.0",
-    "caniuse-lite": "^1.0.30001718",
     "chonky": "^2.3.2",
     "chonky-icon-fontawesome": "^2.3.2",
     "chroma-js": "^2.4.2",
@@ -113,7 +112,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

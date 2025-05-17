@@ -921,43 +921,6 @@ export default function UpdateModal({
             </div>
 
 
-            {/* 
-            <div className="backlog-modal_content_left_item">
-
-                <DropzoneArea
-                  //   acceptedFiles={['image/*']}
-                    value={imageFile}
-                    dropzoneClass= 'backlog-modal_content_left_item-attach'
-                    dropzoneText={"Drop files here, or click to upload"}
-                    onChange={handleImageUpload}
-                    // onChange={(e) => handleImageUpload(e)}
-                    showPreviews={true}
-                    showPreviewsInDropzone={false}
-                    // showFileNames={true}
-                    // showFileNamesInPreview={true}
-                    useChipsForPreview={true}
-                    // previewGridProps={{container: { spacing: 1, direction: 'row' }}}
-                    // previewChipProps={{classes: { root: classes.previewChip } }}
-                    // previewText="Selected files"
-                    showAlerts={false}
-                    filesLimit={1}
-                    Icon= {CustomUploadIcon}
-                  
-                  />
-            </div>
-
-            <div className="backlog-modal_content_left_item">
-                <Button
-                    className="submit-backlog-btn"
-                    onClick={() => {
-                        handleUpdateBacklog()
-                        // updateCard(title, description, tags, index, listId);
-                        handleCloseUpdateModal()
-                    }}
-                >
-                    Update Backlog
-                </Button>
-            </div> */}
           </div>
 
           <div className="backlog-modal_content_right">
@@ -1195,25 +1158,6 @@ export default function UpdateModal({
                       }
                     </div>
                   </div>
-
-
-                  {/* <div className="backlog-modal_content_right-popup-container">
-                    <FormControl fullWidth>
-                      <InputLabel id="demo-simple-select-label">Color</InputLabel>
-                      <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={color}
-                        label="Color"
-                        onChange={handleChangeColor}
-                      >
-                        <MenuItem value='#4382C4'><span className="select-color-circle blue"></span>Blue</MenuItem>
-                        <MenuItem value='#A23051'><span className="select-color-circle red"></span>Red</MenuItem>
-                        <MenuItem value='#008000'><span className="select-color-circle green"></span>Green</MenuItem>
-                        <MenuItem value='#ffa500'><span className="select-color-circle orange"></span>Orange</MenuItem>
-                      </Select>
-                    </FormControl>
-                  </div> */}
                 </Popover>
               </div>
               

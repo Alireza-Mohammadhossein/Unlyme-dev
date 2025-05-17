@@ -22,15 +22,6 @@ import IconButton from '@mui/material/IconButton';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
-// import inboxIconActive from '../../../assets/images/email/inbox.png';
-// import inboxIconNot from '../../../assets/images/email/inbox-not.png';
-// import draftIconActive from '../../../assets/images/email/draft.png';
-// import draftIconNot from '../../../assets/images/email/draft-not.png';
-// import sentIconActive from '../../../assets/images/email/sent.png';
-// import sentIconNot from '../../../assets/images/email/sent-not.png';
-// import starIconActive from '../../../assets/images/email/star.png';
-// import starIconNot from '../../../assets/images/email/star-not.png';
-
 import inboxIcon from '../../../assets/images/email/inbox.svg';
 import sentIcon from '../../../assets/images/email/sent.svg';
 import starredIcon from '../../../assets/images/email/star-black.svg';
@@ -258,14 +249,6 @@ function EmailPageContent() {
                                   }
                                     <p className='email-page_sidebar_actions-section_category-item_content-title'>{item.title}</p>
                                 </div>
-
-                                {/* {item.unreadNum > 0 ?
-                                  <div className='email-page_sidebar_actions-section_category-item_unreadnum'>
-                                    <p>{item.unreadNum}</p>
-                                  </div>
-                                  :
-                                  ''
-                                } */}
                                 
                               </>
                             } 
@@ -274,87 +257,7 @@ function EmailPageContent() {
                       
                       </Tabs>
 
-                      {/* <TreeView
-                        aria-label="file system navigator"
-                        defaultCollapseIcon={<ExpandMoreIcon />}
-                        defaultExpandIcon={<img src={arrowIcon} />}
-                        className="email-page_sidebar_actions-section_category-tree"
-                      >
-                        <TreeItem
-                          nodeId="1"
-                          label={
-                            <div className="email-page_sidebar_actions-section_category-tree_item">
-                              <ListItemText primary="MORE" />
-                            </div>
-                          }
-                        >
-                          <TreeItem
-                            nodeId="2"
-                            label={
-                              <div  className="email-page_sidebar_actions-section_category-tree_item">
-                                <ListItemText primary="Documents" />
-                              </div>
-                            } 
-                          >
-                          </TreeItem>
-                        </TreeItem>
-                      </TreeView> */}
-
-                      {/* <Divider /> */}
-
-                      {/* <TreeView
-                        aria-label="file system navigator"
-                        defaultCollapseIcon={<ExpandMoreIcon />}
-                        defaultExpandIcon={<img src={arrowIcon} />}
-                        className="email-page_sidebar_actions-section_category-tree"
-                      >
-                        <TreeItem
-                          nodeId="1"
-                          label={
-                            <div className="email-page_sidebar_actions-section_category-tree_item">
-                              <ListItemText primary="FOLDERS" />
-                            </div>
-                          }
-                        >
-                          <TreeItem
-                            nodeId="2"
-                            label={
-                              <div  className="email-page_sidebar_actions-section_category-tree_item">
-                                <ListItemText primary="Documents" />
-                              </div>
-                            } 
-                          >
-                          </TreeItem>
-                        </TreeItem>
-                      </TreeView> */}
-
-                      {/* <Divider /> */}
-
-                      {/* <TreeView
-                        aria-label="file system navigator"
-                        defaultCollapseIcon={<ExpandMoreIcon />}
-                        defaultExpandIcon={<img src={arrowIcon} />}
-                        className="email-page_sidebar_actions-section_category-tree"
-                      >
-                        <TreeItem
-                          nodeId="1"
-                          label={
-                            <div className="email-page_sidebar_actions-section_category-tree_item">
-                              <ListItemText primary="LABELS" />
-                            </div>
-                          }
-                        >
-                          <TreeItem
-                            nodeId="2"
-                            label={
-                              <div  className="email-page_sidebar_actions-section_category-tree_item">
-                                <ListItemText primary="Documents" />
-                              </div>
-                            } 
-                          >
-                          </TreeItem>
-                        </TreeItem>
-                      </TreeView> */}
+                    
 
                     </div>
                   </div>

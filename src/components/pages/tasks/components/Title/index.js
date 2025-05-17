@@ -88,47 +88,7 @@ export default function Title({ title, listId, collapseColumns, collapse }) {
             {title}
           </h2>
 
-          {/* <IconButton
-            aria-label="more"
-            className="editable-title-actions"
-            onClick={() => setOpen(!open)}
-          >
-            <EditIcon />
-          </IconButton> */}
-
-
-          {/* <button
-            className="list-button"
-            onClick={() => setOpenOptions(!openOptions)}
-          >
-            <MoreVertIcon />
-          </button> */}
-          {/* {openOptions && (
-            // <ClickOutHandler
-            //   onClickOut={(e) => {
-            //     setOpenOptions(!openOptions);
-            //   }}
-            // >
-              <ul className="menu-card">
-                <li
-                  onClick={() => {
-                    setOpenOptions(!openOptions);
-                    deleteList(listId);
-                  }}
-                >
-                  Delete list
-                </li>
-                <li
-                  onClick={() => {
-                    setOpenOptions(!openOptions);
-                    setOpen(!open);
-                  }}
-                >
-                  Edit card title
-                </li>
-              </ul>
-            // </ClickOutHandler>
-          )} */}
+         
         </div>
       )}
 
