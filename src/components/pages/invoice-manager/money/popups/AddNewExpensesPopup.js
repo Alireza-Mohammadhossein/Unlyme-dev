@@ -14,7 +14,7 @@ import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 import Switch from '@mui/material/Switch';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import { DropzoneArea } from 'material-ui-dropzone';
+// import { DropzoneArea } from 'material-ui-dropzone';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import uploadIcon from '../../../../../assets/images/invoice-manager/upload-cloud.png';
 import { styled } from '@mui/material/styles';
@@ -353,7 +353,7 @@ const AddNewExpensesPopup = ({ handleCloseAddNewExpensesPopup }) => {
           additionalInfo ? 
               <>
                 <div className='money-addnewexpenses-item'>
-                    <DropzoneArea
+                    {/* <DropzoneArea
                     //   acceptedFiles={['image/*']}
                       dropzoneClass= 'money-addnewexpenses-item-attach'
                       dropzoneText={"Drop files here, or click to upload"}
@@ -368,7 +368,7 @@ const AddNewExpensesPopup = ({ handleCloseAddNewExpensesPopup }) => {
                       filesLimit={3}
                       Icon= {CustomUploadIcon}
                     
-                    />
+                    /> */}
                 </div>
               </>
             :

@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from '@mui/material/FormControl';
-import { DropzoneDialog } from 'material-ui-dropzone';
+// import { DropzoneDialog } from 'material-ui-dropzone';
 import Popover from '@mui/material/Popover';
 import Divider from '@mui/material/Divider';
 import TextField from '@mui/material/TextField';
@@ -423,7 +423,7 @@ const NotesDetailsBar = ({ setSearchNote, searchNote, editor, handleDeleteNote, 
                   {/* <img className='arrow' src={arrowDownIcon} /> */}
               </IconButton>
 
-              <DropzoneDialog
+              {/* <DropzoneDialog
                 // acceptedFiles={['image/*']}
                 dropzoneClass= 'backlog-modal_content_left_item-attach'
                 dropzoneText={"Drop files here, or click to upload"}
@@ -446,7 +446,7 @@ const NotesDetailsBar = ({ setSearchNote, searchNote, editor, handleDeleteNote, 
                 Icon= {CustomUploadIcon}
                 // useChipsForPreview={true}
 
-              />
+              /> */}
             </ButtonGroup>
           </div>
 

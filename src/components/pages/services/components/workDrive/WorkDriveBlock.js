@@ -29,7 +29,7 @@ import duplicateIcon from '../../../../../assets/images/my-services/workdrive/du
 import deleteIcon from '../../../../../assets/images/my-services/workdrive/trash.svg';
 import propertiesIcon from '../../../../../assets/images/my-services/workdrive/properties.svg';
 import uploadDriveIcon from '../../../../../assets/images/my-services/workdrive/upload-cloud.svg';
-import { DropzoneArea } from 'material-ui-dropzone';
+// import { DropzoneArea } from 'material-ui-dropzone';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import backIcon from '../../../../../assets/images/my-services/workdrive/back.svg';
 import fileAudio from '../../../../../assets/images/my-services/workdrive/types/audio.png';
@@ -576,8 +576,7 @@ const WorkDriveBlock = () => {
                 }
 
                 <div className="my-services__work-drive_content_upload-mode_input">
-                  <DropzoneArea
-                    // acceptedFiles={['image/*']}
+                  {/* <DropzoneArea
                     dropzoneClass= {`my-services__work-drive_content_upload-mode_input-attach ${uploadedFiles.length > 1 ? 'selected' : ''}`}
                     dropzoneText={
                       <div>
@@ -600,7 +599,7 @@ const WorkDriveBlock = () => {
                     filesLimit={8}
                     maxFileSize= '50000000'
                     Icon= {CustomUploadIcon}
-                  />
+                  /> */}
                 </div>
               </div>
              :

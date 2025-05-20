@@ -8,7 +8,7 @@ import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import { DropzoneArea } from 'material-ui-dropzone';
+// import { DropzoneArea } from 'material-ui-dropzone';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import uploadIcon from '../../../../../assets/images/invoice-manager/upload-cloud.png';
 
@@ -164,7 +164,7 @@ const SendEmailPopup = ({ handleCloseSendEmailPopup, data }) => {
         </div>
 
         <div className='clients-sendemailpopup-item'>
-          <DropzoneArea
+          {/* <DropzoneArea
           //   acceptedFiles={['image/*']}
             dropzoneClass= 'clients-sendemailpopup-item-attach'
             dropzoneText={"Drop files here, or click to upload"}
@@ -179,7 +179,7 @@ const SendEmailPopup = ({ handleCloseSendEmailPopup, data }) => {
             filesLimit={3}
             Icon= {CustomUploadIcon}
           
-          />
+          /> */}
         </div>
 
 

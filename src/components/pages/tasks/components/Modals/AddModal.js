@@ -16,7 +16,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 
-import { DropzoneArea } from 'material-ui-dropzone';
+// import { DropzoneArea } from 'material-ui-dropzone';
 import uploadIcon from '../../../../../assets/images/invoice-manager/upload-cloud.png';
 import { use } from "i18next";
 
@@ -257,7 +257,7 @@ export default function AddModal({
                   {/* <input type="file" onChange={handleImageUpload} /> */}
                   {/* <Input type="file" onChange={handleImageUpload} /> */}
 
-                  <DropzoneArea
+                  {/* <DropzoneArea
                       // acceptedFiles={['image/*']}
                       dropzoneClass= 'backlog-modal_item-attach'
                       dropzoneText={"Drop files here, or click to upload"}
@@ -275,7 +275,7 @@ export default function AddModal({
                       filesLimit={5}
                       Icon= {CustomUploadIcon}
                     
-                    />
+                    /> */}
                 </div>
 
 

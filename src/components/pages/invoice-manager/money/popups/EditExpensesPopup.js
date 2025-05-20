@@ -16,7 +16,7 @@ import { toast } from "react-toastify";
 import dayjs, { Dayjs } from 'dayjs';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import { DropzoneArea } from 'material-ui-dropzone';
+// import { DropzoneArea } from 'material-ui-dropzone';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import uploadIcon from '../../../../../assets/images/invoice-manager/upload-cloud.png'
 import { styled } from '@mui/material/styles';
@@ -364,7 +364,7 @@ const EditExpensesPopup = ({ handleCloseEditExpensesPopup, data}) => {
           additionalInfo ? 
               <>
                 <div className='money-addnewexpenses-item'>
-                    <DropzoneArea
+                    {/* <DropzoneArea
                     //   acceptedFiles={['image/*']}
                       dropzoneClass= 'money-addnewexpenses-item-attach'
                       dropzoneText={"Drop files here, or click to upload"}
@@ -380,7 +380,7 @@ const EditExpensesPopup = ({ handleCloseEditExpensesPopup, data}) => {
                       Icon= {CustomUploadIcon}
                     //   alertSnackbarProps={{horizontal: 'center'}}
                       
-                    />
+                    /> */}
 
                 </div>
               </>

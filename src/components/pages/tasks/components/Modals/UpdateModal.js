@@ -16,8 +16,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Slider from '@mui/material/Slider';
-import { DropzoneArea } from 'material-ui-dropzone';
-import { DropzoneDialog } from 'material-ui-dropzone';
+// import { DropzoneArea } from 'material-ui-dropzone';
+// import { DropzoneDialog } from 'material-ui-dropzone';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputAdornment from '@mui/material/InputAdornment';
 
@@ -513,7 +513,7 @@ export default function UpdateModal({
                     <img src={attachIcon} alt='attach' />
                   </IconButton>
 
-                  <DropzoneDialog
+                  {/* <DropzoneDialog
                     // acceptedFiles={['image/*']}
                     dropzoneClass= 'backlog-modal_content_left_item-attach'
                     dropzoneText={"Drop files here, or click to upload"}
@@ -534,7 +534,7 @@ export default function UpdateModal({
                     Icon= {CustomUploadIcon}
                     // useChipsForPreview={true}
 
-                  />
+                  /> */}
                 </div>
 
               </div>
@@ -845,7 +845,7 @@ export default function UpdateModal({
                         Attach
                       </button>
 
-                      <DropzoneDialog
+                      {/* <DropzoneDialog
                         // acceptedFiles={['image/*']}
                         dropzoneClass= 'backlog-modal_content_left_item-attach'
                         dropzoneText={"Drop files here, or click to upload"}
@@ -866,7 +866,7 @@ export default function UpdateModal({
                         Icon= {CustomUploadIcon}
                         // useChipsForPreview={true}
 
-                      />
+                      /> */}
 
 
                     </div>
